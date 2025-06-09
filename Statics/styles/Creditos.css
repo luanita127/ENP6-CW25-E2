@@ -1,0 +1,27 @@
+@font-face {
+    font-family: Lemon Milk Bod;
+    src: url(../fonts/kenyan_coffee/Kenyan\ Coffee\ Rg.otf) format('opentype');
+}
+@font-face {
+    font-family: Lemon Milk;
+    src: url(../fonts/lemon_milk/LEMONMILK-Bold.otf) format('opentype');
+}
+
+#titulo { background-color: black; 
+    font-weight: 10px; 
+    color: antiquewhite; 
+    text-align: center;
+}
+
+body { background-color: cadetblue;}
+
+h1 { font-family: 'Lemon  Milk Bod'; 
+    font-size: 50px; font-weight: 5px; 
+    background-color: #5f9e80;
+    text-align: center;
+}
+
+h3 { font-size: 35px;}
+
+p { font-family: 'Lemon Milk'; font-size: 10px;}
+
