@@ -1,0 +1,36 @@
+body {
+    background-color: rgb(255, 255, 255);
+}
+header {
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    padding: 20px;
+    box-sizing: content-box;
+    width:460px;
+    justify-content: space-between;
+}
+
+footer {
+    display: flex;
+    justify-content: space-evenly;
+    background-color: rgb(255, 255, 255);
+}
+
+.cambiar {
+
+    padding: 7px 15px;
+    font-size: 1rem;
+    color: black;
+    background-color: rgb(165, 224, 224);
+    border-color: rgb(122, 130, 141);
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    display: flex;
+    box-sizing: content-box;
+}
+
+#datosUsuario {
+    padding: 20px;
+    padding-top: 5px;
+}
