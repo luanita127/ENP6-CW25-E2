@@ -1,0 +1,69 @@
+.ply{
+    display: none;
+}
+
+.slv{
+    display: none;
+}
+
+.bsq{
+    display: none;
+}
+.cdd{
+    display:none;
+}
+
+.preguntainit{
+    display: flex;
+    
+}
+
+#animalform{
+    display: none;
+    height: inherit;
+    width: 500px;
+    background-color: rgb(161, 212, 219);
+    padding: 35px;
+    border: 5px solid rgb(119, 171, 177);
+    border-radius: 10px;
+}
+
+@font-face {
+    font-family: Bree_serif;
+    src: url('../fonts/Bree_serif/BreeSerif-Regular.ttf');
+}
+
+#bioform{
+    height: inherit;
+    width: 500px;
+    background-color: rgb(161, 212, 219);
+    padding: 35px;
+    border: 5px solid rgb(119, 171, 177);
+    border-radius: 10px;
+    justify-content: space-around;
+}
+
+body{
+    font-family: Bree_serif;
+    text-align: center;
+    background-image: linear-gradient(to bottom, #A1D4DB , #000000);
+    min-height: 100vh;
+}
+
+.cent{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+#resultado{
+    display: none;
+    height: inherit;
+    width: 70%;
+    background-color: rgb(161, 212, 219);
+    padding: 35px;
+    border: 5px solid rgb(119, 171, 177);
+    border-radius: 10px;
+}

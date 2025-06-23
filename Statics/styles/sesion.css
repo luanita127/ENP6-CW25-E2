@@ -1,0 +1,131 @@
+body{
+    background-image: linear-gradient(to bottom, #A1D4DB , #000000) ;
+}
+
+#inicio-de-sesion{
+    display: none;
+    width: 500px;
+    height: 350px;
+    background-color: rgb(161, 232, 188);
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    padding: 10%;
+    border: 10px solid rgb(125, 180, 146);
+    border-radius: 10px;
+}
+
+#Crear-una-cuenta{
+    display: none;
+    width: 500px;
+    height: 590px;
+    background-color: rgb(161, 232, 188);
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-around;
+    justify-content: center;
+    padding: 10%;
+    border: 10px solid rgb(125, 180, 146);
+    border-radius: 10px;
+
+}
+
+.botonescuenta{
+    width: 180px;
+    height: 50px;
+    font-size: 15px;
+    background-color: rgb(119, 171, 177);
+    text-align: center;
+    border: 5px solid rgb(93, 134, 138);
+    border-radius: 10px;
+
+}
+
+.hide1{
+    display: none;
+}
+
+#holder{
+    background-color: rgb(161, 212, 219);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 5px solid rgb(119, 171, 177);
+    border-radius: 15px;
+    height: 150px;
+}
+
+#Titl{
+    font-size: 100px;
+}
+
+#center{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+#contenedor{
+    height: 100%;
+    width: 100;
+    position: relative;
+}
+
+#butinit{
+    position: absolute;
+    transform: translate(-50%,-50%);
+    bottom: 33%;
+    left: 49%;
+    align-self: center;
+    background-color: #00000000;
+    border: none;
+    font-size: 40px;
+    border-radius: 15px;
+    width: 310px;
+    height: 70px;
+}
+
+#imgini{
+    position: relative;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+#bienvenida{
+    position: absolute;
+    transform: translate(-50%,-50%);
+    bottom: 60%;
+    left: 66%;
+    font-size: 10px;
+}
+
+#loby{
+    height: 400px;
+    width: 60%;
+    background-color: #A1D4DB;
+    display: none;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.cent{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+@font-face {
+    font-family: Bree_serif;
+    src: url('../fonts/Bree_serif/BreeSerif-Regular.ttf');
+}
+
+body{
+    font-family: Bree_serif;
+}
