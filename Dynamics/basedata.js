@@ -298,8 +298,31 @@ barra.addEventListener("input", function() {
     );
 
     coinsidencias.forEach(canciones => {
+
         let item = document.createElement("li");
-        item.textContent = `${canciones.nombre} - ${canciones.artista}`;
+
+        let butitem = document.createElement("button");
+        butitem.textContent = `${canciones.nombre} - ${canciones.artista}`;
+
+        butitem.onclick = () => {
+          var cancionid = `${canciones.link}`;
+          
+          if(player && player.loadVideoById){
+            player.loadVideoById(cancionid);
+
+            const esperarYActualizar = setInterval(() => {
+              const dur = player.getDuration();
+              if (dur > 0) {
+                duration = dur;
+                seekBar.max = duration;
+                clearInterval(esperarYActualizar);
+              }
+            }, 500);
+          }
+        
+        }
+
+        item.appendChild(butitem);
         result.appendChild(item);
     })
 
