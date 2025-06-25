@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <main id="listaRepro">
+        <article id="album">
+            <p class="tipog">Crear una Playlist</p>
+            <div class="estiloa" id="portada">
+
+            </div>
+            <br>
+            <div class="estilob" id="agregarC">
+            <button class="tipog" > Agregar canciones</button>
+            </div>
+        </article>
+        </article>
+                <div id="lista"></div>
+        </article>
+    </main>
+</body>
+<style>
+
+#portada{
+    width: 250px;
+    height: 250px;
+    background-color: black;
+
+}
+#album {
+    display: flex;
+    position: fixed;
+    width: 750px;
+    padding: 10px;
+    flex-direction: column;
+    align-items: center;
+}
+#lista {
+    margin-left: 1000px; 
+}
+#listaRepro{
+    display:flex;
+}
+#boton{
+    width: 10px;
+    height: 20px;
+}
+.linea {
+    display: flex;
+    flex-direction: row;
+    padding: 4px;
+}
+</style>
+<script>
+let lista = document.getElementById("lista");
+let canciones = [];
+let max = 20;
+for (let i = 1; i <= max; i++) {
+    canciones.push({ nombre: "Nombre de la cancion" });
+}
+function listaRepro() {
+
+    for (let i = 0; i < canciones.length; i++) {
+        let item = document.createElement("div");
+        item.className = "linea";
+        item.innerHTML = `<p>${i + 1}.</p>
+            <p>${canciones[i].nombre}</p>
+            <div class='portada'></div>
+            <button>X</button>`;
+        lista.appendChild(item);
+    }
+}
+
+listaRepro();
+</script>
+</html>
