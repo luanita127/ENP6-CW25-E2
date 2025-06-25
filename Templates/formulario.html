@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h1> Cuéntanos sobre ti </h1>
+
+    <p> Responde esta breve encuesta y descubre qué animal de Yolcame eres !!</p>
+    <br>
+    <div class="cent">
+        <form id="bioform">
+
+            <label for="pre1" class="preguntainit"> ¿En cuál de estos entornos te sientes mas cómodo? </label>
+            <select name="pre1" id="pre1" class="preguntainit">
+                <option value="1">En una playa azul del caribe</option>
+                <option value="2">En un bosque rodeado de naturaleza</option>
+                <option value="3">En una selva llena de animales hermosos</option>
+                <option value="4">En la comodidad de mi hogar, rodeado de tecnología</option>
+            </select>
+
+            <br><p id="err1"></p><br>
+
+            <label for="pre2" class="preguntainit"> ¿A dónde preferirías salir con tus amigos? </label>
+            <select name="pre2" id="pre2" class="preguntainit">
+                <option value="1">una fiesta a la orilla del mar con todos mis amigos</option>
+                <option value="2">¿Fiesta?, mejor acampemos bajo las estrellas y encendamos una fogata</option>
+                <option value="3">Vamós de expedicion a la montaña</option>
+                <option value="4">Salgamos al centro comercial y demos un paseo por el parque</option>
+            </select>
+
+            <br><p id="err2"></p><br>
+
+            <label for="pre3" class="preguntainit"> ¿Cuál es tu compañero de cuarto ideal? </label>
+            <select name="pre3" id="pre3" class="preguntainit">
+                <option value="1">Una Almeja malhumorada</option>
+                <option value="2">Un Venado con el corazón roto</option>
+                <option value="3">Un cocodrilo llamado "mordisquitos"</option>
+                <option value="4">Un Hurón fan de los 80</option>
+            </select>
+
+            <br><p id="err3"></p><br>
+
+            <label for="pre4" class="preguntainit"> ¿Cuándo escuchas música buscas...? </label>
+            <select name="pre4" id="pre4" class="preguntainit">
+                <option value="1">Sentir que surfeo hasta en las olas mas salvajes</option>
+                <option value="2">Llegar a mi lugar seguro a la orilla de un rio</option>
+                <option value="3">Sentir el bajo y la guitarra eléctica desde lo mas profundo de la selva</option>
+                <option value="4">Recordar aquella noche de antro...</option>
+            </select>
+            
+            <br><p id="err4"></p><br>
+
+            <label for="pre5" class="preguntainit"> ¿Qué vibra da la musica que escuhas? </label>
+            <select name="pre5" id="pre5" class="preguntainit">
+                <option value="1">Relajadas, pero con un toque de emoción y energía continua</option>
+                <option value="2">Paz absoluta con un toque de misterio</option>
+                <option value="3">Emoción vertiginosa y las vibras mas oscuras...</option>
+                <option value="4">El "beat" de las mejores canciones de reggaeton</option>
+            </select>
+
+            <br><p id="err5"></p><br>
+
+            <label for="pre6" class="preguntainit"> ¿Cuál es tu género musical preferido? </label>
+            <select name="pre6" id="pre6" class="preguntainit">
+                <option value="1">Los ultimos exitos de pop</option>
+                <option value="2">Prefiero la música instrumental y el lo-fi</option>
+                <option value="3">El rock seguro!</option>
+                <option value="4">El género úrbano y el rap son para mi</option>
+            </select>
+
+            <br><p id="err6"></p><br>
+
+            <label for="pre7" class="preguntainit"> ¿Cuándo tengo un problema yo... </label>
+            <select name="pre7" id="pre7" class="preguntainit">
+                <option value="1">Lo abordo con la mayor calma posible</option>
+                <option value="2">Suelo evadirlo o busco la forma de escapar de el</option>
+                <option value="3">Me enojo y suelto un par de plabrotas</option>
+                <option value="4">Busco la forma mas rapida de arreglarlo aunque no sea lo mejor</option>
+            </select>
+
+            <br><p id="err7"></p><br>
+
+            <label for="pre8" class="preguntainit"> ¿Cuál es tu profesión ideal? </label>
+            <select name="pre8" id="pre8" class="preguntainit">
+                <option value="1">Explorador de las profundidades marinas</option>
+                <option value="2">Lleñador de un bosque embrujado</option>
+                <option value="3">Jefe de una tribu amazónica</option>
+                <option value="4">Dueño de una empresa supermalvada</option>
+            </select>
+
+            <br><p id="err8"></p><br>
+
+            <label for="pre9" class="preguntainit"> ¿Cómo te describen tus amigos? </label>
+            <select name="pre9" id="pre9" class="preguntainit">
+                <option value="1">El más divertido, aquel que siempre tiene energía</option>
+                <option value="2">El más callado, pero que cae chido</option>
+                <option value="3">El más rebelde y atrevido</option>
+                <option value="4">El qué siempre llega tarde pero anima a todos cuando llega</option>
+            </select>
+
+            <br><p id="err9"></p>
+
+            <input type="submit">
+            
+
+            <br><br>
+
+        </form>
+
+        <form id="animalform">
+            <label for="ply" class="ply"> ¿Cuál es tu actividad favorita? </label>
+            <select name="ply" id="ply" class="ply">
+                <option value="Cangrejo">Pellizcar a alguien con mis pinzas...</option>
+                <option value="Tortuga">Esconderme en mi caparazón cuando hace frío</option>
+                <option value="Tiburon">Morder a los turistas cuándo salen a nadar</option>
+                <option value="Pulpo">Hacer bromas cuándo soy invisible</option>
+            </select>
+
+            <br><p id="err10"></p><br>
+
+            <label for="bsq" class="bsq"> ¿Cuál de estas caracteristicas te define? </label>
+            <select name="bsq" id="bsq" class="bsq">
+                <option value="Mapache">"Tengo ojeras gigantes"</option>
+                <option value="Nutria">"Soy suave como una nube"</option>
+                <option value="Ajolote">"Soy pequeño y amigable"</option>
+                <option value="Zorro">"Soy mas rapido que cualquier conejito"</option>
+            </select>
+
+            <br><p id="err11"></p><br>
+
+            <label for="slv" class="slv"> ¿Cual de estos podria ser tu hobbie? </label>
+            <select name="slv" id="slv" class="slv">
+                <option value="Murcielago">"Colgar de los techos de una cueva"</option>
+                <option value="Tigre">"Comer los filetes mas extravagantes"</option>
+                <option value="Capibara">"Ser un meme de internet"</option>
+                <option value="Rana">"Hacer pierna en el gimnasio todos los dias"</option>
+            </select>
+
+            <br><p id="err12"></p><br>
+
+            <label for="cdd" class="cdd"> ¿Que buscas en otras personas? </label>
+            <select name="cdd" id="cdd" class="cdd">
+                <option value="Perro">"Que sean leales, y me acompañen en todas mis aveturas"</option>
+                <option value="Gato">"Que me den mi propio espacio pero esten ahi cuando las necesite"</option>
+                <option value="Hamster">"Que sean graciosas y y divertidas"</option>
+                <option value="Colibri">"Que sean muy abiertas y libres"</option>
+            </select>
+
+            <br><p id="err13"></p>
+
+            <input type="submit">
+
+        </form>
+    </div>
+
+    <div class="cent">
+        <div id="resultado">
+            <p id="result"></p>
+            <img src="" id="imganiml">
+            <p id="resultani"></p>
+        </div>
+    </div>
+
+
+
+    <link rel="stylesheet" href="../Statics/styles/form.css">
+    <script src="../Dynamics/form.js"></script>
+</body>
+</html>
