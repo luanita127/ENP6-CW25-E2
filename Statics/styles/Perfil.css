@@ -43,11 +43,13 @@ footer {
     gap: 20px;
     padding: 30px;
     padding-bottom: 5px;
+    padding-left: 50px;
 }
 
-#descripcion {
+#desc {
     padding: 30px;
     padding-top: 0;
+    padding-left: 50px;
 }
 
 #info h1 {
@@ -77,5 +79,18 @@ footer {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    padding-right: 30px;
+    padding-right: 40px;
+}
+
+.contenidoEditar {
+    display: none;
+}
+
+#fotoUsuario {
+    width: 225px;
+    height: 225px;
+}
+
+#editarPerfil {
+    padding: 20px;
 }
