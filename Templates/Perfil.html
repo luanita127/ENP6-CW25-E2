@@ -8,25 +8,33 @@
 </head>
 
 <body>
-    <header>
-        <img src = "../Statics/img/usuarioSinFoto.avif" width = "170">
-        <h1> Nombre de usuario </h1>
-    </header>
 
     <main>
-        <section id = "datosUsuario">
-            <h3> Horas registradas: </h3>
-            <h3> Artista favorito: </h3>
-            <h3> Canción favorita: </h3>
-            <br>
-            <h3> Descripción del usuario: </h3> <br>    
+        <div id = "top">
+            <div id = "info">
+                <img src = "../Statics/img/fotoUsuario.png" width = "170">
+                <section id = "datos">
+                    <h1> Nombre de usuario </h1> <br>
+                    <h2> Horas registradas: </h2>
+                    <h2> Artista favorito: </h2>
+                    <h2> Canción favorita: </h2>
+                </section>
+            </div>
+            <section id = "home">
+                <button type ="button" id = "iconoHome">
+                    <img src = "../Statics/img/iconoHome.png">
+                </button>
+            </section>
+        </div>    
+        <section id = "descripcion">
+            <h2> Descripción del usuario: </h2>
+            <p> (aquí la descripción lol) </p>
         </section>
     </main>
 
     <footer>
-        <button type = "button" class = "cambiar"> Cambiar nombre </button>
-        <button type = "button" class = "cambiar"> Cambiar fondo </button>
-        <button type = "button" class = "cambiar"> Cambiar animal </button>
+        <button type = "button" class = "cambiar"> Editar perfil </button>
+        <button type = "button" class = "cambiar"> Cerrar sesión </button>
     </footer>
 </body>
 </html>
