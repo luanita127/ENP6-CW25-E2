@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../Statics/styles/inicio.css">
+    <script src="../Dynamics/basedata.js"></script>
+    <script src="../Dynamics/nuestraBase.js"></script>
     <title>Yolcame Miusic</title>
 </head>
 <body>
@@ -13,7 +15,7 @@
             <nav id="headerNav">
                 <div class="songSearch">
                     <form>
-                        <input type="search" id="search" name="search">
+                        <input type="bsq" id="bsq" name="bsq">
                         <button type="submit" id="submitSearch">
                             <img src="../Statics/img/search.svg" alt="searchIcon" id="searchIcon">
                         </button>
@@ -24,6 +26,9 @@
                 </a>
             </nav>
         </header>
+        <div class="cent">
+            <ul id="result"></ul>
+        </div>
         <nav class="topBarNav">
             <a href="" class="navBar">  
                 <span>Playlist</span>
@@ -48,7 +53,7 @@
     <main class="main">
         <section id="mainSection">
             <article id="myPlaylists">
-                <div class="mainTitle" id="myPlaylists">Mis Playlists</div>
+                <div class="mainTitle" id="myPlaylists">Mis <br> Playlists</div>
                 <div id="grid">
                     <div class="mainElement">a</div>
                     <div class="mainElement">a</div>
@@ -72,5 +77,6 @@
             </article>
         </section>
     </main>
+    <script src="../Dynamics/buscador.js"></script>
 </body>
 </html>
