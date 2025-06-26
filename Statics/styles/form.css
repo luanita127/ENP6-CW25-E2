@@ -18,6 +18,37 @@
     
 }
 
+#holder{
+    background-color: rgb(161, 212, 219);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 5px solid rgb(119, 171, 177);
+    border-radius: 15px;
+    height: 150px;
+}
+
+.botonescuenta{
+    width: 180px;
+    height: 50px;
+    font-size: 15px;
+    background-color: rgb(119, 171, 177);
+    text-align: center;
+    border: 5px solid rgb(93, 134, 138);
+    border-radius: 10px;
+
+}
+
+#conte{
+    display: none;
+    height: inherit;
+    width: 500px;
+    background-color: rgb(161, 212, 219);
+    padding: 35px;
+    border: 5px solid rgb(119, 171, 177);
+    border-radius: 10px;
+}
+
 #animalform{
     display: none;
     height: inherit;

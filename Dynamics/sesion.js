@@ -1,22 +1,16 @@
+
 let btninit = document.getElementById("butinit");
 let btncuenta = document.getElementById("inicioses")
-let btncrear = document.getElementById("crearct")
 
 let enviar = document.getElementById("submitis");
 let crear = document.getElementById("iniciemos");
 
 let inicioses = document.getElementById("inicio-de-sesion");
-let crearcuenta = document.getElementById("Crear-una-cuenta");
-
-let nomusereg = document.getElementById("nomusernew");
-let contrasenareg = document.getElementById("password");
-let banda = document.getElementById("fav1");
-let cancion = document.getElementById("fav2");
-let descripcion = document.getElementById("desc");
 
 let nomuser = document.getElementById("nomuser");
 let contrasena = document.getElementById("pass");
 
+//Boton de inicio
 
 btninit.addEventListener("click", function(event){
     let conten = document.getElementById("center");
@@ -29,6 +23,8 @@ btninit.addEventListener("click", function(event){
     
 })
 
+//Boton para abrir el inicio de sesion
+
 btncuenta.addEventListener("click", function(event){
     inicioses.style.display = "flex";
     let ocultos = document.getElementsByClassName("hide1");
@@ -37,26 +33,25 @@ btncuenta.addEventListener("click", function(event){
     }
 })
 
-btncrear.addEventListener("click", function(event){
-    crearcuenta.style.display = "flex";
-    let ocultos = document.getElementsByClassName("hide1");
-    for(let i = 0 ; i < ocultos.length ; i++){
-        ocultos[i].style.display = "none"
-    }
-})
+
+/*Evento de submit para el inicio de sesion, se buscan los campos completados por
+el usuario y se comparan con las cookies existentes*/
 
 inicioses.addEventListener("submit", function(event){
 
     event.preventDefault();
 
+    //Validaciones
+
+    let error = document.getElementById("err2");
+    let error2 = document.getElementById("err2");
+
     if(nomuser.value == "" || nomuser.value == " "){
-        let error = document.getElementById("err1");
         error.textContent = "Nombre de usuario no encontrado";
     }
 
     if(contrasena.value == "" || contrasena.value == " "){
-        let error = document.getElementById("err2");
-        error.textContent = "Contraseña incorrecta";
+        error2.textContent = "Contraseña incorrecta";
     }
 
     const galletas = document.cookie.split(";");
@@ -68,74 +63,28 @@ inicioses.addEventListener("submit", function(event){
             info = decodeURIComponent(valor);
         }
         else{
+            error.textContent = "El nombre de usuario no existe";
         }
     }
 
+    /*Comprobacion de la contrasena del usuario, en caso de ser correcta se 
+     envia al usuario al inicio de la pagina*/
+
     if(info){
 
-        console.log("chmba");
         info = JSON.parse(info);
 
         let passcokie = info.pass
 
         if (contrasena.value.trim() == passcokie.trim()){
+            let nombre = nomuser.value.trim();
             console.log("log in exitoso");
+            document.cookie = `actual=${nombre}; path=/`;
+            window.location.href="Templates/inicio.html" ;
         }
         else{
-            console.log("la contrasna es incorrecta");
+            error2.textContent = "La contraseña que agregaste es incorrecta";
         }
     }
-
-
-
 })
-
-crearcuenta.addEventListener("submit", function(event){
-
-    event.preventDefault()
-    let validacion = true;
-
-    let datosreg = {
-        nombred: nomusereg.value.trim(),
-        pass: contrasenareg.value.trim(),
-        artistad: banda.value.trim(),
-        canciond: cancion.value.trim(),
-        descripciond: descripcion.value.trim(),
-    };
-
-    let nombrereg = nomusereg.value.trim();
-
-    if(nomusereg.value == "" || nomuser.value == " "){
-        let error = document.getElementById("err1");
-        error.textContent = "Este nombre de usuario no es valido";
-        validacion = false;
-    }
-
-    if(contrasenareg.value == "" || contrasena.value == " "){
-        let error = document.getElementById("err2");
-        error.textContent = "Contraseña incorrecta";
-        validacion = false;
-    }
-
-    if(validacion == true){
-        crearCookie(nombrereg, datosreg);
-    }
-
-    inicioses.style.display = "flex";
-    let ocultos = document.getElementsByClassName("hide1");
-    for(let i = 0 ; i < ocultos.length ; i++){
-        ocultos[i].style.display = "none"
-    }
-
-})
-
-
-
-function crearCookie(nombrereg, datosreg){
-    let date = new Date();
-    date.setTime(date.getTime() + (30*24*60*60*1000));
-    expiracion = date.toGMTString();
-    datosreg = encodeURIComponent(JSON.stringify(datosreg));
-    document.cookie = `${nombrereg}=${datosreg}; expires=${expiracion}`;
-}
 
