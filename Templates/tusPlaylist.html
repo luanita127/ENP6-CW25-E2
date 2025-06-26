@@ -3,9 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../Statics/styles/inicio.css">
-    <script src="../Dynamics/basedata.js"></script>
-    <script src="../Dynamics/nuestraBase.js"></script>
+    <link rel="stylesheet" href="../Statics/styles/tusPlaylist.css">
     <title>Yolcame Miusic</title>
 </head>
 <body>
@@ -15,7 +13,7 @@
             <nav id="headerNav">
                 <div class="songSearch">
                     <form>
-                        <input type="bsq" id="bsq" name="bsq">
+                        <input type="search" id="search" name="search">
                         <button type="submit" id="submitSearch">
                             <img src="../Statics/img/search.svg" alt="searchIcon" id="searchIcon">
                         </button>
@@ -26,9 +24,6 @@
                 </a>
             </nav>
         </header>
-        <div class="cent">
-            <ul id="result"></ul>
-        </div>
         <nav class="topBarNav">
              <a href="../Templates/tusPlaylist.html" class="navBar">  
                 <span id="misPlaylists">Mis Playlists</span>
@@ -51,32 +46,14 @@
         </nav>
     </section>
     <main class="main">
+        <div class="mainTitle" id="recSongs">Tus Playlist</div>
         <section id="mainSection">
-            <article id="myPlaylists">
-                <div class="mainTitle" id="myPlaylists">Mis <br> Playlists</div>
-                <div id="grid">
-                    <div class="mainElement">a</div>
-                    <div class="mainElement">a</div>
-                    <div class="mainElement">a</div>
-                </div>
-            </article>
-            <article>
-                <img src="../Statics/img/Ranita.png" alt="mainFig" id="ranita2">
-                <div id="centerDiv">Crear Playlist</div>
-            </article>
-            <article id="recSongs">
-                <div class="mainTitle" id="recSongs">Canciones que te recomendamos</div>
-                <div id="grid2">
-                    <div class="mainElement">a</div>
-                    <img src="../Statics/img/songPlus.png" alt="+">
-                    <div class="mainElement">a</div>
-                    <img src="../Statics/img/songPlus.png" alt="+">
-                    <div class="mainElement">a</div>
-                    <img src="../Statics/img/songPlus.png" alt="+">
-              </div>
-            </article>
+            <div id="playlist1" class="portada">
+            </div>
+            <div id="playlist2" class="portada">
+            </div>
+            <div id="playlist3" class="portada">
+            </div>
         </section>
     </main>
-    <script src="../Dynamics/buscador.js"></script>
-</body>
 </html>

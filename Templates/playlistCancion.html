@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../Statics/styles/playlistCancion.css">
+    <title>Yolcame Miusic</title>
+</head>
+<body>
+    <section id="grad">
+            <a href="../Templates/crearPlaylist.html" class="navBar" id="site">Yolcame Miusic</a>
+                <div class="songSearch">
+                    <form>
+                        <input type="search" id="search" name="search">
+                        <button type="submit" id="submitSearch">
+                            <img src="../Statics/img/search.svg" alt="searchIcon" id="searchIcon">
+                        </button>
+                    </form>
+                </div>
+                <a href="../Templates/Perfil.html" id="headerUser">
+                    <img src="../Statics/img/Ranita.png" alt="userIcon" id="froggy">
+                </a>
+               <a href="../Templates/inicio.html" id="iconoHome">
+                    <img src="../Statics/img/iconoHome.png" alt="iconoHome" id="froggy">
+                </a>
+    </section>
+    <main id="cancionInterfaz">
+        <div id="portada"></div>
+            <input type="range" min="0" max="1000">
+        <nav id="barraInfe">
+            <button class="botones" id="cancionA">cancion</button>
+            <button class="botones" id="noRepetir">noRepetir</button>
+            <button class="botones" id="anterior">Anterior</button>
+            <button class="botones" id="pausa">pausa</button>
+            <button class="botones" id="siguiente">siguiente</button>
+            <button class="botones" id="aleatorio">aleatorio</button>
+            <button class="botones" id="cola">cola</button>
+        </nav>
+    </main>
+</html>

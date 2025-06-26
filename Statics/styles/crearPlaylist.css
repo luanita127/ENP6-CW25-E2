@@ -1,0 +1,29 @@
+#portada{
+    width: 250px;
+    height: 250px;
+    background-color: black;
+
+}
+#album {
+    display: flex;
+    position: fixed;
+    width: 750px;
+    padding: 10px;
+    flex-direction: column;
+    align-items: center;
+}
+#lista {
+    margin-left: 1000px; 
+}
+#listaRepro{
+    display:flex;
+}
+#boton{
+    width: 10px;
+    height: 20px;
+}
+.linea {
+    display: flex;
+    flex-direction: row;
+    padding: 4px;
+}
