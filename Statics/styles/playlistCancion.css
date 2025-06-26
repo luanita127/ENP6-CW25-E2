@@ -9,8 +9,12 @@ body{
     background-image: linear-gradient(#031ca6, #8f757534);
     white-space: nowrap;
     position: fixed;
-    width: 100%;
-    top: 0;
+    width: 17%;
+    height: 94%;
+    top: 2%;
+    left: 1%;
+    border: white;
+    border-radius: 11%;
 }
 
 .main{
@@ -78,6 +82,9 @@ body{
     align-content: center;
     justify-content: center;
     align-items: center;
+    margin-right: 41px;
+    margin-top: 529px;
+
 }
 
 #froggy{
@@ -97,61 +104,56 @@ body{
     text-decoration: none;
     color: white;
 }
-
-.mainTitle{
-    background-color: #e13b96;
-}
-
-.mainElement{
-    background-color: #b18ccf;
-    height: 5em;
-    margin: 2em 2em;
-    font-size: 24px;
-}
-
-#mainSection{
-    display: grid;
-    grid-template-columns: repeat(2, 3fr) 4fr;
-    margin: 1mm 9em;
-}
-
-#ranita2{
-    width: 12rem;
-    height: auto;
-    margin: 7em 5em 0;
-}
-
-#grid{
-    display: grid;
-}
-
-#grid2{
-    display: grid;
-    grid-template-columns: 4fr 1fr;
-}
 #site{
     font-size: 27px;
+
 }
-#centerDiv{
+#mainSection{
     display: flex;
-    background-color: #e13b96;
-    font-size: 24px;
-    margin: 85% 25%;
-    color: white;
-    justify-content: center;
-    padding: .5em;
-    width: 40%;
+    width: 1341px;
+    padding: 100px;
+    align-items: center;
+    justify-content: space-around;
 }
-
-#myPlaylists{
-    font-size: 56px;
+#portada{
+    margin-left: 99px;
+    margin-top: 49px;
+    width: 799px;
+    height: 444px;
+    background-color: black;
 }
-
 #recSongs{
     font-size: 32px;
+    margin-left: 690px;
 }
 
-img[alt="+"]{
-    margin-top: 2em;
-    width: 2em;
+#iconoHome {
+    width: 50px;
+    height: 50px;
+    background-color: transparent;
+    cursor: pointer;
+    margin-left: 10px;
+    margin-bottom: 0px;
+}
+#barraInfe{
+        display: flex;
+    width:  90%;
+    align-items: center;
+    align-content: space-around;
+}
+#cancionA{
+   
+}
+#cola{
+    
+}
+#barraDes{
+    scrollbar-color:black;
+    scrollbar-width: thin;
+}
+#cancionInterfaz{
+    
+     margin-left: 400px;
+     width: 70%;
+     height: 90%;
 }

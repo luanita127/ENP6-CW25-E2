@@ -97,61 +97,24 @@ body{
     text-decoration: none;
     color: white;
 }
-
-.mainTitle{
-    background-color: #e13b96;
-}
-
-.mainElement{
-    background-color: #b18ccf;
-    height: 5em;
-    margin: 2em 2em;
-    font-size: 24px;
-}
-
-#mainSection{
-    display: grid;
-    grid-template-columns: repeat(2, 3fr) 4fr;
-    margin: 1mm 9em;
-}
-
-#ranita2{
-    width: 12rem;
-    height: auto;
-    margin: 7em 5em 0;
-}
-
-#grid{
-    display: grid;
-}
-
-#grid2{
-    display: grid;
-    grid-template-columns: 4fr 1fr;
-}
 #site{
     font-size: 27px;
+
 }
-#centerDiv{
+#mainSection{
     display: flex;
-    background-color: #e13b96;
-    font-size: 24px;
-    margin: 85% 25%;
-    color: white;
-    justify-content: center;
-    padding: .5em;
-    width: 40%;
+    width: 1341px;
+    padding: 100px;
+    align-items: center;
+    justify-content: space-around;
 }
 
-#myPlaylists{
-    font-size: 56px;
+.portada{
+    width: 222px;
+    height: 222px;
+    background-color: black;
 }
-
 #recSongs{
     font-size: 32px;
-}
-
-img[alt="+"]{
-    margin-top: 2em;
-    width: 2em;
+    margin-left: 690px;
 }
