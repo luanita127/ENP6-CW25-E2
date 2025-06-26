@@ -2,6 +2,10 @@ body{
     background-image: linear-gradient(to bottom, #A1D4DB , #000000) ;
 }
 
+a{
+    display: flex;
+}
+
 #inicio-de-sesion{
     display: none;
     width: 500px;
