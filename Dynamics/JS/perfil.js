@@ -35,7 +35,7 @@ regresarBtn.addEventListener("click", function()
 let duracion = 60 * 60 * 24;
 
 //divide la cookie obtenida en subcadenas
-const galletas = document.cookie.split(";");
+const galletas = document.cookie.split(";")
 let nombreAnterior
 for (let cookie of galletas) {
     const [key, valor] = cookie.trim().split('=');
