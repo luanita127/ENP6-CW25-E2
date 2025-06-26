@@ -31,32 +31,24 @@ regresarBtn.addEventListener("click", function()
 
 //VISTA SECUNDARIA: EDICIÓN DE PERFIL.
 //creación de datos y cookies provisionales para probar el funcionamiento del programa
-
-
 //duración provisional de las cookies
 let duracion = 60 * 60 * 24;
 
-/*document.cookie = `actual = ${datos.nombre}`;
-document.cookie = `artista= ${datos.artista}; max-age=${duracion}`;
-document.cookie = `cancion= ${datos.cancion}; max-age=${duracion}`;
-document.cookie = `descript= ${datos.descript}; max-age=${duracion}`;*/
-
-
-const galletas = document.cookie.split(";");
+//divide la cookie obtenida en subcadenas
+const galletas = document.cookie.split(";")
 let nombreAnterior
 for (let cookie of galletas) {
-    const [key, valor] = cookie.split('=');
-    if(key.startsWith("actual"))
-        nombreAnterior = cookie.slice(6)
+    const [key, valor] = cookie.trim().split('=');
+    if(key === "actual")
+        nombreAnterior = valor;
 }
 
+//decodifica la cadena obtenida y obtiene el valor
 let datosCookies
 for (let cookie of galletas) {
     const [key, valor] = cookie.split('=');
-    if(key === nombreAnterior)
-    {
-        datosCookies = decodeURIComponent(valor);
-    }    
+    if(key.trim() === nombreAnterior.trim());
+        datosCookies = decodeURIComponent(valor);    
 }
 
 console.log(datosCookies);
@@ -75,18 +67,19 @@ let nombreTexto = document.getElementById('nombreTexto');
 nombreTexto.textContent = `${nombreAnt}`;
 
 let artistaTexto = document.getElementById('artistaTexto');
-artistaTexto.textContent = `Artista favorito: ${datos.artista}`;
+artistaTexto.textContent = `Artista favorito: ${artistaAnt}`;
 
 let cancionTexto = document.getElementById('cancionTexto');
-cancionTexto.textContent = `Canción favorita: ${datos.cancion}`;
+cancionTexto.textContent = `Canción favorita: ${cancionAnt}}`;
 
 let descTexto = document.getElementById('descTexto');
-descTexto.textContent = `${datos.descript}`;
+descTexto.textContent = `${descripciond}`;
 
 
 //Obtiene los datos introducidos por el usuario en el formulario HTML de edición de perfil
 let formulario = document.getElementById('editarPerfil');
 let nombreUsuario = document.getElementById('nombreUsuario');
+let password = document.getElementById('contraseña');
 let artista = document.getElementById('artista');
 let cancion = document.getElementById('canción');
 let descripcion = document.getElementById('descripción');
@@ -98,27 +91,19 @@ formulario.addEventListener("submit", function(event)
 
     const datos = {
         nombred: `${nombreUsuario.value}`,
+        pass: `${password.value}`,
         artistad: `${artista.value}`,
         canciond: `${cancion.value}`,
-        descripciond: `${descripcion.value}`
+        descripciond: `${descripcion.value}`,
+        bio: `${bioma.value}`,
+        ani: `${animal.value}`
     };
 
-    document.cookie = `${nombreAnterior}; max-age=0`;
+    //actualiza (elimina y crea) cookies
+    document.cookie = `${nombreAnterior}=; max-age=0; path=/`;
     let valor = encodeURIComponent(JSON.stringify(datos));
-
-    document.cookie = `${nombreUsuario.value}=${valor}; max-age=${duracion}`;
-    document.cookie = `actual=${nombreUsuario.value}; max-age=${duracion}`;
-
-    //Actualiza el valor de las cookies.
-    /*document.cookie = `artista= ${artista.value}; max-age=${duracion}`;
-    document.cookie = `cancion= ${cancion.value}; max-age=${duracion}`;
-    document.cookie = `descript= ${descripcion.value}; max-age=${duracion}`;
-
-    //imprime los datos del usuario en la pestaña de perfil.
-    nombreTexto.textContent = `${nombreUsuario.value}`;
-    artistaTexto.textContent = `Artista favorito: ${artista.value}`;
-    cancionTexto.textContent = `Canción favorita: ${cancion.value}`;
-    descTexto.textContent = `${descripcion.value}`;*/
+    document.cookie = `${nombreUsuario.value}=${valor}; max-age=${duracion}; path=/`;
+    document.cookie = `actual=${nombreUsuario.value}; path=/`;
     console.log("Los datos actuales son" + document.cookie);
 
     window.location.reload();
