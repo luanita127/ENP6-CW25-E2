@@ -20,6 +20,9 @@ footer {
 }
 
 .cambiar {
+
+    width: 150px;
+    height: 25px;
     padding: 15px 30px;
     font-size: 1.5rem;
     color: black;
@@ -43,7 +46,6 @@ footer {
     gap: 20px;
     padding: 30px;
     padding-bottom: 5px;
-    padding-left: 50px;
 }
 
 #desc {
@@ -84,6 +86,8 @@ footer {
 
 .contenidoEditar {
     display: none;
+    flex-direction: row;
+    justify-content:space-between;
 }
 
 #fotoUsuario {
@@ -93,4 +97,49 @@ footer {
 
 #editarPerfil {
     padding: 20px;
+}
+
+#edicion {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 30px;
+    padding-left: 50px;
+}
+
+#submit {
+    padding: 15px 30px;
+    font-size: 1.5rem;
+    color: black;
+    background-color: #d3add8;
+    border-color: rgb(67, 71, 75);
+    border-width: 1px;
+    border-radius: 4px;
+    cursor: pointer;
+    display: flex;
+    box-sizing: content-box;
+}
+
+#editarPerfil input,
+#editarPerfil textarea {
+    padding: 10px;
+    border: 2px solid #d0b2e4;
+    border-radius: 10px;
+    outline: none;
+    width: 250px;
+    font-size: 14px;
+    background-color: #fff;
+}
+
+#regresar img{
+    width: 70px;
+}
+
+#regresar {
+    padding-top: 30px;
+    width: 50px;
+    height: 50px;
+    background-color: transparent;
+    cursor: pointer;
+    border: none;
 }
