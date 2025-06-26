@@ -4,37 +4,67 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel = "stylesheet" href = "../Statics/styles/perfil.css">
+
     <title>Perfil</title>
 </head>
 
 <body>
 
-    <main>
+    <main class = "contenidoPrincipal">
         <div id = "top">
             <div id = "info">
-                <img src = "../Statics/img/fotoUsuario.png" width = "170">
+                <img src = "../Statics/img/fotoUsuario.png" id = "fotoUsuario">
                 <section id = "datos">
-                    <h1> Nombre de usuario </h1> <br>
-                    <h2> Horas registradas: </h2>
-                    <h2> Artista favorito: </h2>
-                    <h2> Canción favorita: </h2>
+                    <h1 id = "nombreTexto"> </h1> <br>
+                    <h2 id = "horas"> </h2>
+                    <h2 id = "artistaTexto"> </h2>
+                    <h2 id = "cancionTexto"> </h2>
                 </section>
             </div>
+
             <section id = "home">
                 <button type ="button" id = "iconoHome">
                     <img src = "../Statics/img/iconoHome.png">
                 </button>
             </section>
         </div>    
-        <section id = "descripcion">
-            <h2> Descripción del usuario: </h2>
-            <p> (aquí la descripción lol) </p>
+
+        <section id = "desc">
+            <h2> Descripción: </h2>
+            <h3 id = "descTexto"> </h3>
         </section>
     </main>
-
-    <footer>
-        <button type = "button" class = "cambiar"> Editar perfil </button>
-        <button type = "button" class = "cambiar"> Cerrar sesión </button>
+        
+    <footer class = "contenidoPrincipal">
+            <button type = "button" class = "cambiar" id = "editar"> Editar perfil </button>
+            <button type = "button" class = "cambiar" id = "sesión"> Cerrar sesión </button>   
     </footer>
+
+
+    <main class = "contenidoEditar">
+        <div id = "edicion">
+            <img src = "../Statics/img/fotoUsuario.png" id = "fotoUsuario">
+            <form id = "editarPerfil">
+                <label for = "nombreUsuario"> </label>
+                <input type = "text" name = "nombreUsuario" id = "nombreUsuario" placeholder = "Nombre de usuario"> <br><br>
+                <label for = "artista"> </label>
+                <input type = "text" name = "artista" id = "artista" placeholder = "Artista favorito"> <br><br>
+                <label for = "canción"> </label>
+                <input type = "text" name = "canción" id = "canción" placeholder = "Canción favorita"> <br><br>
+                <label for = "descripción"> </label>
+                <textarea name = "descripción" id = "descripción" placeholder = "Escribe aquí tu descripción"></textarea> <br><br>
+                <button type = "submit" id = "submit"> Guardar cambios </button>
+            </form>
+            <button type = "button" id = "regresar"> 
+                <img src = "../Statics/img/iconoRegresar.png"
+            </button>
+        </div>    
+    </main>
+
 </body>
+
+<script src = "../Dynamics/JS/perfil.js"></script>
+
 </html>
+
+
