@@ -75,6 +75,24 @@
             </article>
             
         </section>
+
+        <div id="player"></div>
+
+        <div class="controls-bar">
+            <button id="playPauseBtn">⏸️</button> 
+            <label for="volumeSlider">Volumen:</label>
+            <button type="text" id="muteBtn"></button> 
+            <input type="range" max="100"  id="volumeSlider">
+
+            <!-- <span class="time">
+                <span id="currentTime">00:00</span>
+                <span id="duration">00:00</span>
+            </span> -->
+            <label for="seekBar">Duracion:</label>
+            <input type="range" id="seekBar" step="0.1" min="1">
+        </div>
+        <script src="../Dynamics/elementals.js"></script>
+    
     </main>
     <script src="../Dynamics/buscador.js"></script>
      <script src="https://youtube.com/iframe_api"></script>
