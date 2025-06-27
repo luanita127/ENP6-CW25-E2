@@ -2,7 +2,6 @@
 
 //Obtiene elementos del HTML (botones) que despliegan las funciones de editar, regresar y cerrar sesión
 let editarBtn = document.getElementById('editar');
-let sesionBtn = document.getElementById('sesión');
 let regresarBtn = document.getElementById('regresar');
 
 //Obtiene elementos del HTML (clases) para crear las funciones de desplegar y ocultar elementos según el botón clickeado
@@ -112,3 +111,12 @@ formulario.addEventListener("submit", function(event)
 console.log("Los datos actuales son" + document.cookie);
 
 
+//FUNCIÓN CERRAR SESIÓN
+let sesionBtn = document.getElementById('sesion');
+
+sesionBtn.addEventListener("click", function()
+{
+    document.cookie = `actual=; max-age=0; path=/`;
+    window.location.href = "../../index.html";
+    console.log(document.cookie);
+})
