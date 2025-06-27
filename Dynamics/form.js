@@ -170,7 +170,7 @@ aniform.addEventListener("submit", function(event){
         if(playaAni.value == "Tiburon" && preguntap[0].style.display == "flex"){
             resulta.textContent = "Felicidades eres un tiburon";
             result.textContent = " Felicidades perteneces a la playa";
-            imagenres.src="../Statics/img/tiburón.png";
+            imagenres.src="../Statics/img/Ranita.png";
             conte.style.display="block";
             valido = true;
             animal = "tiburon";
