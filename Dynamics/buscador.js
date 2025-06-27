@@ -46,10 +46,12 @@ barra.addEventListener("input", function() {
 
         coinsidencias.forEach(bdcanciones => {
 
-            let item = document.createElement("li");
+            let item = document.createElement("div");
 
             let butitem = document.createElement("button");
             butitem.textContent = `${bdcanciones.nombre} - ${bdcanciones.artista}`;
+
+            butitem.classList.add("resbut");
 
             butitem.onclick = () => {
                 var cancionid = `${bdcanciones.link}`;
@@ -94,10 +96,12 @@ barra.addEventListener("input", function() {
     // Recorremos el arreglo "Coincidenciasb" para buscar el nombre denro del diccionario que sacamos de nuestra base de datos"
     coincidenciasb.forEach(bdAlbums => {
 
-        let item = document.createElement("li");
+        let item = document.createElement("div");
 
         let butitem = document.createElement("button");
         butitem.textContent = `Album - ${bdAlbums.nombre} - ${bdAlbums.artista}`;
+
+        butitem.classList.add("resbut");
 
         //En este caso creamos una cookie para guardar la informacion del Album que seleccionamos
         butitem.onclick = () => {
@@ -117,10 +121,12 @@ barra.addEventListener("input", function() {
     a guardar la informacion de un artista*/
     coincidenciasc.forEach(bdArtistas => {
 
-        let item = document.createElement("li");
+        let item = document.createElement("div");
 
         let butitem = document.createElement("button");
         butitem.textContent = `Artista - ${bdArtistas.nombre}`;
+
+        butitem.classList.add("resbut");
 
         butitem.onclick = () => {
             var artistaid = `${bdArtistas.id}`;
@@ -135,7 +141,7 @@ barra.addEventListener("input", function() {
     que le confirme que no encontramos coinsidencias en nuestra base de datos*/
     
     if(coinsidencias.length == 0 && coincidenciasb.length == 0 && coincidenciasc.length == 0){
-        let item = document.createElement("li");
+        let item = document.createElement("div");
         item.textContent = "No hay coinsidencias";
         result.appendChild(item);
     }
