@@ -114,9 +114,16 @@ console.log("Los datos actuales son" + document.cookie);
 //FUNCIÓN CERRAR SESIÓN
 let sesionBtn = document.getElementById('sesion');
 
-sesionBtn.addEventListener("click", function()
+sesionBtn.addEventListener("click", function() 
 {
     document.cookie = `actual=; max-age=0; path=/`;
-    window.location.href = "../../index.html";
+    window.location.href = "../index.html";
     console.log(document.cookie);
+})
+
+
+let home = document.getElementById('iconoHome');
+
+home.addEventListener('click', () =>{
+    window.location.href = "../inicio.html";
 })
