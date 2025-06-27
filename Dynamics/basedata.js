@@ -139,7 +139,7 @@ const baseDatosJSON = {
       id_artista: 12,
       album: "Pablo Honey",
       id_album: 12,
-      link: "wB27c-sioBrtXUrA",
+      link: "l5t9IXtTr6g",
       genero: "Rock",
       id_genero: 3,
     },
@@ -150,7 +150,7 @@ const baseDatosJSON = {
       id_artista: 13,
       album: "October 2013",
       id_album: 13,
-      link: "IFbvcNcpWzcoRlDw",
+      link: "MQqyP3O1qPA",
       genero: "Pop",
       id_genero: 2,
     },
@@ -161,7 +161,7 @@ const baseDatosJSON = {
       id_artista: 14,
       album: "Right thoughts, Right Words, Right Action",
       id_album: 14,
-      link: "iAkz-zTQXEpE_hN1",
+      link: "4nJ0o8-3Aas",
       genero: "indie",
       id_genero: 4,
     },
@@ -172,7 +172,7 @@ const baseDatosJSON = {
       id_artista: 15,
       album: "Soda Stereo",
       id_album: 15,
-      link: "mR5rBZnLcXdV35TE",
+      link: "jOD2rhPzlhQ",
       genero: "Rock",
       id_genero: 3,
     },
@@ -183,7 +183,7 @@ const baseDatosJSON = {
       id_artista: 16,
       album: "La Historia Sin Fin",
       id_album: 16,
-      link: "esXdeiQolnWwvF5R",
+      link: "5TvfHMNZ7UY",
       genero: "indie",
       id_genero: 4,
     },
@@ -194,7 +194,7 @@ const baseDatosJSON = {
       id_artista: 9,
       album: "Trench",
       id_album: 17,
-      link: "n7wgSnJ-PQoVj6Cv",
+      link: "v75Vv4__cdI",
       genero: "Rock",
       id_genero: 3,
     },
@@ -205,7 +205,7 @@ const baseDatosJSON = {
       id_artista: 17,
       album: "Good Luck Babe!",
       id_album: 18,
-      link: "XmjPJjv3mUW66yI3",
+      link: "u4H-Zconvlw",
       genero: "Pop",
       id_genero: 2,
     },
@@ -216,7 +216,7 @@ const baseDatosJSON = {
       id_artista: 18,
       album: "Paraiso Lunar",
       id_album: 19,
-      link: "XAW8fujfmq7GqhL1",
+      link: "4_lZeAUvivM",
       genero: "indie",
       id_genero: 4,
     },
@@ -227,7 +227,7 @@ const baseDatosJSON = {
       id_artista: 19,
       album: "AMERI",
       id_album: 20,
-      link: "FXQM01Zc5pCrR2XC",
+      link: "kPtgqCXujF4",
       genero: "Urbano",
       id_genero: 5,
     },
@@ -238,7 +238,7 @@ const baseDatosJSON = {
       id_artista: 20,
       album: "Oddinary",
       id_album: 21,
-      link: "FEyK4s_Vy_9IDdcW",
+      link: "JY0zl8mCbww",
       genero: "K-pop",
       id_genero: 6,
     },
@@ -249,7 +249,7 @@ const baseDatosJSON = {
       id_artista: 21,
       album: "Lazarus",
       id_album: 22,
-      link: "aVAYfjaNLR70MN7O",
+      link: "t6Q6xNlakJQ",
       genero: "Pop",
       id_genero: 2,
     },
@@ -260,7 +260,7 @@ const baseDatosJSON = {
       id_artista: 22,
       album: "Bad",
       id_album: 23,
-      link: "u46-oMgGcMLhH1au",
+      link: "YUKci-qdK5k",
       genero: "Pop",
       id_genero: 2,
     },
@@ -271,7 +271,7 @@ const baseDatosJSON = {
       id_artista: 23,
       album: "Wizard of Ahhhs",
       id_album: 24,
-      link: "161tF_S65xh0CW-B",
+      link: "jhGAnqUtQDk",
       genero: "indie",
       id_genero: 4,
     },
@@ -282,7 +282,7 @@ const baseDatosJSON = {
       id_artista: 9,
       album: "Vessel",
       id_album: 25,
-      link: "q9w9JCREMiNIjXrF",
+      link: "lQ4gm8bHz0o",
       genero: "indie",
       id_genero: 4,
     },
@@ -293,7 +293,7 @@ const baseDatosJSON = {
       id_artista: 15,
       album: "Cancion Animal",
       id_album: 26,
-      link: "McTbQIJKcvddIbum",
+      link: "Wb4S6kx6uu4",
       genero: "Rock",
       id_genero: 3,
     },
@@ -304,7 +304,7 @@ const baseDatosJSON = {
       id_artista: 24,
       album: "Musica Libre",
       id_album: 27,
-      link: "h_Y52YxzLBBYGEQR",
+      link: "nNDnTv3kfq0",
       genero: "Pop",
       id_genero: 2,
     },
@@ -480,7 +480,7 @@ const baseDatosJSON = {
       artista: "Twenty One Pilots",
       id_artista: 9,
       descripcion: "'El Diablito' es un álbum que marcó un hito en la música rock en español, con letras poéticas y una fusión de géneros.",
-      url_img: "https://upload.wikimedia.org/wikipedia/en/5/5c/Caifanes_ElDiablitoLP_cover.jpeg"
+      url_img: "https://ishopmx.vtexassets.com/arquivos/ids/292869/75678608643.jpg?v=638508807931370000"
     },
     {
       id: 10,
@@ -488,7 +488,7 @@ const baseDatosJSON = {
       artista: "The strokes",
       id_artista: 10,
       descripcion: "'El Silencio' es un álbum emblemático de Caifanes, que consolidó su estatus como una de las bandas más influyentes del rock en español.",
-      url_img: "https://i.scdn.co/image/ab67616d0000b273bc4d989c48ad5b154fb0781d"
+      url_img: "https://m.media-amazon.com/images/I/71ZcjUILvdL.jpg"
     },
     {
       id: 11,
@@ -496,7 +496,7 @@ const baseDatosJSON = {
       artista: "Nirvana",
       id_artista: 11,
       descripcion: "'El Nervio del Volcán' es un álbum que muestra la evolución musical de Caifanes, con letras profundas y una fusión de géneros.",
-      url_img: "https://i.scdn.co/image/ab67616d0000b27336aeaab4dc91a8dea53a2d8f"
+      url_img: "https://i.scdn.co/image/ab67616d0000b27336c5417732e53e23cb219246"
     },
     {
       id: 12,
@@ -504,7 +504,7 @@ const baseDatosJSON = {
       artista: "Radio Head",
       id_artista: 12,
       descripcion: "'El Nervio del Volcán' es un álbum que muestra la evolución musical de Caifanes, con letras profundas y una fusión de géneros.",
-      url_img: "https://i.scdn.co/image/ab67616d0000b27336aeaab4dc91a8dea53a2d8f"
+      url_img: "https://i.scdn.co/image/ab67616d0000b273ec548c00d3ac2f10be73366d"
     },
     {
       id: 13,
@@ -512,7 +512,7 @@ const baseDatosJSON = {
       artista: "Alexander Rybak",
       id_artista: 13,
       descripcion: "'El Nervio del Volcán' es un álbum que muestra la evolución musical de Caifanes, con letras profundas y una fusión de géneros.",
-      url_img: "https://i.scdn.co/image/ab67616d0000b27336aeaab4dc91a8dea53a2d8f"
+      url_img: "https://i.scdn.co/image/ab67616d0000b2732e1c6382b5cb1571270aad83"
     },
     {
       id: 14,
@@ -520,7 +520,7 @@ const baseDatosJSON = {
       artista: "Franz Ferdinand",
       id_artista: 14,
       descripcion: "'El Nervio del Volcán' es un álbum que muestra la evolución musical de Caifanes, con letras profundas y una fusión de géneros.",
-      url_img: "https://i.scdn.co/image/ab67616d0000b27336aeaab4dc91a8dea53a2d8f"
+      url_img: "https://upload.wikimedia.org/wikipedia/en/e/e1/Franz_Ferdinand_-_Right_Thoughts_Right_Words_Right_Action-cover.jpg"
     },
     {
       id: 15,
@@ -528,7 +528,7 @@ const baseDatosJSON = {
       artista: "Soda Stereo",
       id_artista: 15,
       descripcion: "'El Nervio del Volcán' es un álbum que muestra la evolución musical de Caifanes, con letras profundas y una fusión de géneros.",
-      url_img: "https://i.scdn.co/image/ab67616d0000b27336aeaab4dc91a8dea53a2d8f"
+      url_img: "https://m.media-amazon.com/images/I/71T8-+5HBYL._UF1000,1000_QL80_.jpg"
     },
     {
       id: 16,
@@ -536,7 +536,7 @@ const baseDatosJSON = {
       artista: "Porter",
       id_artista: 16,
       descripcion: "'El Nervio del Volcán' es un álbum que muestra la evolución musical de Caifanes, con letras profundas y una fusión de géneros.",
-      url_img: "https://i.scdn.co/image/ab67616d0000b27336aeaab4dc91a8dea53a2d8f"
+      url_img: "https://m.media-amazon.com/images/I/61tBXXKmozL.jpg"
     },
     {
       id: 17,

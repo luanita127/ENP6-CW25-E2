@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crea una playlist</title>
+    <link rel = "stylesheet" href = "../Statics/styles/nuevaPlaylist.css">
+    <script src="../Dynamics/basedata.js"></script>
+    <script src="../Dynamics/nuestraBase.js"></script>
+    <link rel="icon" href="../Statics/img/logo.png" type="image/x-icon">
+</head>
+<body>
+    <section id="grad">
+        <header class="header">
+            <a href="../Templates/inicio.html" class="navBar" id="site">Yolcame Miusic</a>
+            <nav id="headerNav">
+                <div class="songSearch">
+                    <form>
+                        <input type="text" id="bsq" name="bsq">
+                        <button type="submit" id="submitSearch">
+                            <img src="../Statics/img/search.svg" alt="searchIcon" id="searchIcon">
+                        </button>
+                    </form>
+                    <div class="cent">
+                        <div id="result"></div>
+                    </div>
+                </div>
+                <a href="../Templates/Perfil.html" id="headerUser">
+                    <img src="../Statics/img/Ranita.png" alt="userIcon" id="froggy">
+                </a>
+            </nav>
+        </header>
+    </section>
+
+    <main>
+        <br><br><br>
+        <h1> Crear una playlist</h1>
+        <form id="nameplay">
+            <label for = "nombrePlaylist"></label> <br>
+            <input type = "text" id="noplay" placeholder ="Ingresa el nombre de tu playlist"><br>
+            <label for = "imagen"> Selecciona una imagen de portada para la playlist </label> <br>
+
+            <input type = "radio" id = "playa" name = "imagen">
+            <label for = "playa"> 
+                <img src = "../Statics/img/Tiburon_perfil.webp" width = "250px">
+            </label>
+
+            <input type = "radio" id = "bosque" name = "imagen">
+            <label for = "bosque">
+                <img src = "../Statics/img/zorro_perfil.webp" width = "250px">
+            </label> <br>
+
+            <input type = "radio" id = "selva" name = "imagen">
+            <label for = "selva">
+                <img src = "../Statics/img/Capibara_perfil.webp" width = "250px">
+            </label>
+
+            <input type = "radio" id = "ciudad" name = "imagen">
+            <label for = "ciudad">
+                <img src = "../Statics/img/hamster_perfil.webp" width = "250px">
+            </label>
+            <p></p>
+            <br> <button type ="submit" id = "submit"> Crear playlist </button>
+            <br> <button id = "net"> Continuar</button>
+        </form> 
+
+        <br><button type = "button"> Agregar canciones </button>
+    </main>
+    <script src="../Dynamics/nuevaPlaylist.js"></script>
+    <script src="../Dynamics/buscadorPlaylist.js"></script>
+</body>
+</html>

@@ -2,7 +2,6 @@
 
 //Obtiene elementos del HTML (botones) que despliegan las funciones de editar, regresar y cerrar sesión
 let editarBtn = document.getElementById('editar');
-let sesionBtn = document.getElementById('sesión');
 let regresarBtn = document.getElementById('regresar');
 
 //Obtiene elementos del HTML (clases) para crear las funciones de desplegar y ocultar elementos según el botón clickeado
@@ -47,7 +46,7 @@ for (let cookie of galletas) {
 let datosCookies
 for (let cookie of galletas) {
     const [key, valor] = cookie.split('=');
-    if(key.trim() === nombreAnterior.trim());
+    if(key.trim() === nombreAnterior.trim())
         datosCookies = decodeURIComponent(valor);    
 }
 
@@ -55,11 +54,11 @@ console.log(datosCookies);
 
 datosCookies = JSON.parse(datosCookies);
 let nombreAnt = datosCookies.nombred;
-let contraseña = datosCookies.pass
+let contraseña = datosCookies.pass;
 let artistaAnt = datosCookies.artistad;
 let cancionAnt = datosCookies.canciond;
 let descripciond = datosCookies.descripciond;
-let bioma = datosCookies.bio
+let bioma = datosCookies.bio;
 let animal = datosCookies.ani;
 
 //imprime los datos del usuario en la pestaña de perfil.
@@ -112,3 +111,19 @@ formulario.addEventListener("submit", function(event)
 console.log("Los datos actuales son" + document.cookie);
 
 
+//FUNCIÓN CERRAR SESIÓN
+let sesionBtn = document.getElementById('sesion');
+
+sesionBtn.addEventListener("click", function() 
+{
+    document.cookie = `actual=; max-age=0; path=/`;
+    window.location.href = "../index.html";
+    console.log(document.cookie);
+})
+
+
+let home = document.getElementById('iconoHome');
+
+home.addEventListener('click', () =>{
+    window.location.href = "../inicio.html";
+})

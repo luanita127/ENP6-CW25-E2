@@ -3,27 +3,69 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="../Statics/styles/crearPlaylist.css">
-
+    <link rel="stylesheet" href="../Statics/styles/inicio.css">
+    <link rel="stylesheet" href="../Statics/styles/playlist.css">
+    <script src="../Dynamics/basedata.js"></script>
+    <script src="../Dynamics/nuestraBase.js"></script>
+    <title>Tu playlist</title>
+    <link rel="icon" href="../Statics/img/logo.png" type="image/x-icon">
 </head>
 <body>
+    <section id="grad">
+        <header class="header">
+            <a href="../Templates/inicio.html" class="navBar" id="site">Yolcame Miusic</a>
+            <nav id="headerNav">
+                <div class="songSearch">
+                    <form>
+                        <input type="text" id="bsq" name="bsq">
+                        <button type="submit" id="submitSearch">
+                            <img src="../Statics/img/search.svg" alt="searchIcon" id="searchIcon">
+                        </button>
+                    </form>
+                </div>
+                <a href="../Templates/Perfil.html" id="headerUser">
+                    <img src="../Statics/img/Ranita.png" alt="userIcon" id="froggy">
+                </a>
+            </nav>
+        </header>
+        <div class="cent">
+            <ul id="result"></ul>
+        </div>
+        <nav class="topBarNav">
+             <a href="./tusPlaylist.html" class="navBar">  
+                <span id="misPlaylists">Mis Playlists</span>
+            </a>
+            <a href="./ventanaArtistas.html" class="navBar">
+                <span>Artistas</span>
+            </a>
+            <a href="./generosVentana.html" class="navBar">
+                <span>Géneros</span>
+            </a>
+            <a href="./ventanaAlbumes.html" class="navBar">
+                <span>Albumes</span>
+            </a>
+            <a href="../Templates/creditos.html" class="navBar" id="creditos">
+                <span>Créditos</span>
+            </a>
+        </nav>
+    </section>
     <main id="listaRepro">
         <article id="album">
-            <p class="tipog">Crear una Playlist</p>
+            <p class="tipog">La playlist debe tener al menos una canción en todo momento</p>
             <div class="estiloa" id="portada">
 
             </div>
             <br>
+        </article>
+        <article id="contain">
             <div class="estilob" id="agregarC">
-            <button class="tipog" > Agregar canciones</button>
+            <button class="tipog" id="addSong">Agregar canciones</button>
             </div>
-        </article>
-        </article>
-                <div id="lista"></div>
+            <div id="lista"></div>
         </article>
     </main>
-     <script src="../Dynamics/crearPlaylist.js"></script>
-
-</body>
-</html>
+    <script src="../Dynamics/playlistView.js"></script>
+    <script src="../Dynamics/buscadorPlaylist.js"></script>
+    
+    </body>
+</html> 

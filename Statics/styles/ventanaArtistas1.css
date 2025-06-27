@@ -1,0 +1,36 @@
+.botones {
+    padding: 10px;
+    display: flex;
+    height: 120px;
+    width: 120px;
+    cursor: pointer;
+    border-radius: 4px;
+    justify-content: center;
+    box-sizing: content-box;
+    margin: 10px;
+}
+
+#botonesArtistas {
+    padding-top: 20%;
+    padding-left: 25px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.imagenes {
+    height: 150px;
+    width: 150px;
+}
+
+.topBarNav{
+    display: flex;
+    justify-content: space-around;
+    margin: 1rem;
+    font-size: large;
+}
+
+.navBar{
+    text-decoration: none;
+    color: white;
+}
