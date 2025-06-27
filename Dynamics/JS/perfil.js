@@ -47,7 +47,7 @@ for (let cookie of galletas) {
 let datosCookies
 for (let cookie of galletas) {
     const [key, valor] = cookie.split('=');
-    if(key.trim() === nombreAnterior.trim());
+    if(key.trim() === nombreAnterior.trim())
         datosCookies = decodeURIComponent(valor);    
 }
 
@@ -55,11 +55,11 @@ console.log(datosCookies);
 
 datosCookies = JSON.parse(datosCookies);
 let nombreAnt = datosCookies.nombred;
-let contraseña = datosCookies.pass
+let contraseña = datosCookies.pass;
 let artistaAnt = datosCookies.artistad;
 let cancionAnt = datosCookies.canciond;
 let descripciond = datosCookies.descripciond;
-let bioma = datosCookies.bio
+let bioma = datosCookies.bio;
 let animal = datosCookies.ani;
 
 //imprime los datos del usuario en la pestaña de perfil.
