@@ -63,7 +63,8 @@ body ::before{
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    width: 100%;
+    width: 32%;
+    margin-left: 33%;
 }
 
 .songSearch{
@@ -167,6 +168,14 @@ body ::before{
     display: grid;
     grid-template-columns: 4fr 1fr;
 }
+
+#contain{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 50%;
+}
+
 #site{
     font-size: 27px;
 }
