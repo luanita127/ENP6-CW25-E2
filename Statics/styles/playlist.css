@@ -1,0 +1,59 @@
+#portada{
+    width: 30rem;
+    height: 30rem;
+    background-color: black;
+    margin-top: 4em;
+}
+#album {
+    display: flex;
+    width: 25rem;
+    padding: 1rem;
+    flex-direction: column;
+    align-items: center;
+    color: #ffffff;
+}
+
+.tipog{
+    background-color: #166947aa;
+}
+
+#lista {
+    display: flex;
+    margin-left: auto;
+    padding: 0 5rem;
+    flex-direction: column;
+    background-color: #166947aa;
+}
+
+#agregarC{
+    display: flex;
+    align-items: center;
+}
+
+#listaRepro{
+    display:flex;
+    margin: 8rem 0 0 4rem;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+#boton{
+    width: 10px;
+    height: 20px;
+}
+
+.secSongs{
+    display: flex;
+    margin-top: 2em;
+}
+.song {
+    display: flex;
+    flex-direction: row;
+    padding: 4px;
+    font-size: 22px;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+
+.delete{
+    margin-left: auto;
+}
