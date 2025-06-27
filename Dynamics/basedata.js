@@ -369,37 +369,44 @@ const baseDatosJSON = {
     {
       id: 1,
       nombre: "Música Electrónica",
-      descripcion: "La música electrónica es un género musical que utiliza tecnología electrónica para crear sonidos y ritmos, abarcando una amplia variedad de estilos."
+      descripcion: "La música electrónica es un género musical que utiliza tecnología electrónica para crear sonidos y ritmos, abarcando una amplia variedad de estilos.",
+      url_img: "../Statics/img/musicaElectronica.png"
     },
     {
       id: 2,
       nombre: "Pop",
-      descripcion: "El pop es un género musical popular caracterizado por melodías pegajosas y letras accesibles, abarcando una amplia gama de estilos y artistas."
+      descripcion: "El pop es un género musical popular caracterizado por melodías pegajosas y letras accesibles, abarcando una amplia gama de estilos y artistas.",
+      url_img: "../Statics/img/musicaPop.png"
     },
     {
       id: 3,
       nombre: "Rock",
-      descripcion: "El rock es un género musical que se originó en la década de 1950, caracterizado por el uso de guitarras eléctricas, batería y una fuerte presencia vocal."
+      descripcion: "El rock es un género musical que se originó en la década de 1950, caracterizado por el uso de guitarras eléctricas, batería y una fuerte presencia vocal.",
+      url_img: "../Statics/img/musicaRock.png"
     },
     {
       id: 4,
       nombre: "Hip Hop",
-      descripcion: "El hip hop es un género musical y cultural que se originó en la década de 1970, caracterizado por el rap, el DJing y el breakdancing."
+      descripcion: "El hip hop es un género musical y cultural que se originó en la década de 1970, caracterizado por el rap, el DJing y el breakdancing.",
+      url_img: "../Statics/img/musicaHipHop.png"
     },
     {
       id: 5,
       nombre: "R&B",
-      descripcion: "El R&B (Rhythm and Blues) es un género musical que combina elementos de soul, funk y pop, con un enfoque en las melodías vocales y ritmos pegajosos."
+      descripcion: "El R&B (Rhythm and Blues) es un género musical que combina elementos de soul, funk y pop, con un enfoque en las melodías vocales y ritmos pegajosos.",
+      url_img: "../Statics/img/musicaR&B.png"
     },
     {
       id: 6,
       nombre: "Country",
-      descripcion: "El country es un género musical estadounidense que se originó en el sur, caracterizado por sus historias narrativas y el uso de instrumentos como la guitarra acústica y el banjo."
+      descripcion: "El country es un género musical estadounidense que se originó en el sur, caracterizado por sus historias narrativas y el uso de instrumentos como la guitarra acústica y el banjo.",
+      url_img: "../Statics/img/musicaCountry.png"
     },
     {
       id: 7,
       nombre: "Jazz",
-      descripcion: "El jazz es un género musical que se originó a principios del siglo XX, caracterizado por su improvisación, ritmos complejos y una rica tradición instrumental."
+      descripcion: "El jazz es un género musical que se originó a principios del siglo XX, caracterizado por su improvisación, ritmos complejos y una rica tradición instrumental.",
+      url_img: "../Statics/img/musicaJazz.png"
     }
   ],
   album: [
