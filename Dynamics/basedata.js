@@ -473,7 +473,7 @@ const baseDatosJSON = {
       artista: "Twenty One Pilots",
       id_artista: 9,
       descripcion: "'El Diablito' es un álbum que marcó un hito en la música rock en español, con letras poéticas y una fusión de géneros.",
-      url_img: "https://upload.wikimedia.org/wikipedia/en/5/5c/Caifanes_ElDiablitoLP_cover.jpeg"
+      url_img: "https://ishopmx.vtexassets.com/arquivos/ids/292869/75678608643.jpg?v=638508807931370000"
     },
     {
       id: 10,
@@ -481,7 +481,7 @@ const baseDatosJSON = {
       artista: "The strokes",
       id_artista: 10,
       descripcion: "'El Silencio' es un álbum emblemático de Caifanes, que consolidó su estatus como una de las bandas más influyentes del rock en español.",
-      url_img: "https://i.scdn.co/image/ab67616d0000b273bc4d989c48ad5b154fb0781d"
+      url_img: "https://m.media-amazon.com/images/I/71ZcjUILvdL.jpg"
     },
     {
       id: 11,
@@ -489,7 +489,7 @@ const baseDatosJSON = {
       artista: "Nirvana",
       id_artista: 11,
       descripcion: "'El Nervio del Volcán' es un álbum que muestra la evolución musical de Caifanes, con letras profundas y una fusión de géneros.",
-      url_img: "https://i.scdn.co/image/ab67616d0000b27336aeaab4dc91a8dea53a2d8f"
+      url_img: "https://i.scdn.co/image/ab67616d0000b27336c5417732e53e23cb219246"
     },
     {
       id: 12,
@@ -497,7 +497,7 @@ const baseDatosJSON = {
       artista: "Radio Head",
       id_artista: 12,
       descripcion: "'El Nervio del Volcán' es un álbum que muestra la evolución musical de Caifanes, con letras profundas y una fusión de géneros.",
-      url_img: "https://i.scdn.co/image/ab67616d0000b27336aeaab4dc91a8dea53a2d8f"
+      url_img: "https://i.scdn.co/image/ab67616d0000b273ec548c00d3ac2f10be73366d"
     },
     {
       id: 13,
@@ -505,7 +505,7 @@ const baseDatosJSON = {
       artista: "Alexander Rybak",
       id_artista: 13,
       descripcion: "'El Nervio del Volcán' es un álbum que muestra la evolución musical de Caifanes, con letras profundas y una fusión de géneros.",
-      url_img: "https://i.scdn.co/image/ab67616d0000b27336aeaab4dc91a8dea53a2d8f"
+      url_img: "https://i.scdn.co/image/ab67616d0000b2732e1c6382b5cb1571270aad83"
     },
     {
       id: 14,
@@ -513,7 +513,7 @@ const baseDatosJSON = {
       artista: "Franz Ferdinand",
       id_artista: 14,
       descripcion: "'El Nervio del Volcán' es un álbum que muestra la evolución musical de Caifanes, con letras profundas y una fusión de géneros.",
-      url_img: "https://i.scdn.co/image/ab67616d0000b27336aeaab4dc91a8dea53a2d8f"
+      url_img: "https://upload.wikimedia.org/wikipedia/en/e/e1/Franz_Ferdinand_-_Right_Thoughts_Right_Words_Right_Action-cover.jpg"
     },
     {
       id: 15,
@@ -521,7 +521,7 @@ const baseDatosJSON = {
       artista: "Soda Stereo",
       id_artista: 15,
       descripcion: "'El Nervio del Volcán' es un álbum que muestra la evolución musical de Caifanes, con letras profundas y una fusión de géneros.",
-      url_img: "https://i.scdn.co/image/ab67616d0000b27336aeaab4dc91a8dea53a2d8f"
+      url_img: "https://m.media-amazon.com/images/I/71T8-+5HBYL._UF1000,1000_QL80_.jpg"
     },
     {
       id: 16,
@@ -529,7 +529,7 @@ const baseDatosJSON = {
       artista: "Porter",
       id_artista: 16,
       descripcion: "'El Nervio del Volcán' es un álbum que muestra la evolución musical de Caifanes, con letras profundas y una fusión de géneros.",
-      url_img: "https://i.scdn.co/image/ab67616d0000b27336aeaab4dc91a8dea53a2d8f"
+      url_img: "https://m.media-amazon.com/images/I/61tBXXKmozL.jpg"
     },
     {
       id: 17,
