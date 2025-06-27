@@ -22,3 +22,15 @@
     height: 150px;
     width: 150px;
 }
+
+.topBarNav{
+    display: flex;
+    justify-content: space-around;
+    margin: 1rem;
+    font-size: large;
+}
+
+.navBar{
+    text-decoration: none;
+    color: white;
+}
