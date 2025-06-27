@@ -1,0 +1,132 @@
+body{
+    margin: 0;
+    background-image: url('../img/fondoPlaya.png');
+    background-size: cover;
+    font-family: Bree_serif;
+    display: flex;
+    flex-direction: column;
+}
+
+@font-face {
+    font-family: Bree_serif;
+    src: url('../fonts/Bree_serif/BreeSerif-Regular.ttf');
+}
+
+#result{
+    display: none;
+    background-color: #0000004f;
+    width: 30%;
+    margin-left: 4em;
+    
+}
+
+#bsq{
+    position: relative;
+    bottom: 5px;
+    background-color: #00000000;
+    border-color: #00000000;
+    outline: none;
+}
+
+#grad{
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    background-image: linear-gradient(#2b7c5f, #8f757534);
+    position: fixed;
+    white-space: nowrap;
+    width: 100%;
+    top: 0;
+}
+
+.main{
+    margin-top: 9em;
+}
+
+.header{
+    margin-left: 1rem;
+    display: flex;
+    position: sticky;
+    flex-wrap: nowrap;
+    color: white;
+    align-items: center;
+    max-height: 2cm;
+    font-size: larger;
+}
+
+.cent{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+}
+
+#search{
+    background-color: #00000000;
+    border: none;
+    color: white;
+    outline: none;
+}
+
+#searchIcon{
+    max-width: 1.5rem;
+    height: auto;
+    color: #ffffff;
+}
+
+#searchIcon:hover{
+    cursor: pointer;
+}
+
+#submitSearch{
+    background-color: #00000000;
+    border: none;
+    max-width: 2rem;
+}
+
+#headerNav{
+    display: flex;
+    width: 100%;
+    align-items: center;
+}
+
+#headerUser{
+    display: flex;
+    background-color: #30af8b;
+    margin-right: 1rem;
+    text-decoration: none;
+    color: white;
+    margin-left: auto;
+    width: 3.5rem;
+    height: 3.5rem;
+    border-radius: 100%;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+
+#froggy{
+    margin-bottom: .2rem;
+    max-width: 2.5rem;
+    height: auto;
+}
+
+.topBarNav{
+    display: flex;
+    justify-content: space-around;
+    margin: 1rem;
+    font-size: large;
+}
+
+.navBar{
+    text-decoration: none;
+    color: white;
+}
+
+#titulo {
+    position: fixed;
+    left: 43%;
+    top: 20%;
+}
