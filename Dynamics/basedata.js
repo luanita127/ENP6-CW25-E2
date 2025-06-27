@@ -97,8 +97,217 @@ const baseDatosJSON = {
       id_album: 8,
       link: "T8TtE-enslA",
       genero: "Rock",
-      id_genero: 3
-    }
+      id_genero: 3,
+    },
+    {
+      id: 10,
+      nombre: "Navigating",
+      artista: "Twenty One Pilots",
+      id_artista: 9,
+      album: "Clancy",
+      id_album: 9,
+      link: "vFQkfzZLGYo",
+      genero: "Rock",
+      id_genero: 3,
+    },
+    {
+      id: 11,
+      nombre: "Reptilia",
+      artista: "The Strokes",
+      id_artista: 10,
+      album: "Room on Fire",
+      id_album: 10,
+      link: "MrLnOfYFVvQ",
+      genero: "indie",
+      id_genero: 4,
+    },
+    {
+      id: 12,
+      nombre: "The Man Who Sold The World",
+      artista: "Nirvana",
+      id_artista: 11,
+      album: "The Man Who Sold The World",
+      id_album: 11,
+      link: "0PkRmuzj5A8",
+      genero: "Rock",
+      id_genero: 3,
+    },
+    {
+      id: 13,
+      nombre: "Creep",
+      artista: "Radio Head",
+      id_artista: 12,
+      album: "Pablo Honey",
+      id_album: 12,
+      link: "l5t9IXtTr6g",
+      genero: "Rock",
+      id_genero: 3,
+    },
+    {
+      id: 14,
+      nombre: "5 to 7 Years",
+      artista: "Alexander Rybak",
+      id_artista: 13,
+      album: "October 2013",
+      id_album: 13,
+      link: "MQqyP3O1qPA",
+      genero: "Pop",
+      id_genero: 2,
+    },
+    {
+      id: 15,
+      nombre: "Love Illumination",
+      artista: "Franz Ferdinand",
+      id_artista: 14,
+      album: "Right thoughts, Right Words, Right Action",
+      id_album: 14,
+      link: "4nJ0o8-3Aas",
+      genero: "indie",
+      id_genero: 4,
+    },
+    {
+      id: 16,
+      nombre: "Te hacen falta Vitaminas",
+      artista: "Soda Stereo",
+      id_artista: 15,
+      album: "Soda Stereo",
+      id_album: 15,
+      link: "jOD2rhPzlhQ",
+      genero: "Rock",
+      id_genero: 3,
+    },
+    {
+      id: 17,
+      nombre: "Cachito de Galaxia",
+      artista: "Porter",
+      id_artista: 16,
+      album: "La Historia Sin Fin",
+      id_album: 16,
+      link: "5TvfHMNZ7UY",
+      genero: "indie",
+      id_genero: 4,
+    },
+    {
+      id: 18,
+      nombre: "Nico And The Niners",
+      artista: "Twenty One Pilots",
+      id_artista: 9,
+      album: "Trench",
+      id_album: 17,
+      link: "v75Vv4__cdI",
+      genero: "Rock",
+      id_genero: 3,
+    },
+    {
+      id: 19,
+      nombre: "Good Luck Babe!",
+      artista: "Chapelle Ronan",
+      id_artista: 17,
+      album: "Good Luck Babe!",
+      id_album: 18,
+      link: "u4H-Zconvlw",
+      genero: "Pop",
+      id_genero: 2,
+    },
+    {
+      id: 20,
+      nombre: "Paraiso Lunar",
+      artista: "Sidartha",
+      id_artista: 18,
+      album: "Paraiso Lunar",
+      id_album: 19,
+      link: "4_lZeAUvivM",
+      genero: "indie",
+      id_genero: 4,
+    },
+    {
+      id: 21,
+      nombre: "Buscarte Lejos",
+      artista: "Duki",
+      id_artista: 19,
+      album: "AMERI",
+      id_album: 20,
+      link: "kPtgqCXujF4",
+      genero: "Urbano",
+      id_genero: 5,
+    },
+    {
+      id: 22,
+      nombre: "Maniac",
+      artista: "Stray Kids",
+      id_artista: 20,
+      album: "Oddinary",
+      id_album: 21,
+      link: "JY0zl8mCbww",
+      genero: "K-pop",
+      id_genero: 6,
+    },
+    {
+      id: 23,
+      nombre: "Billionarie",
+      artista: "Travis McCoy",
+      id_artista: 21,
+      album: "Lazarus",
+      id_album: 22,
+      link: "t6Q6xNlakJQ",
+      genero: "Pop",
+      id_genero: 2,
+    },
+    {
+      id: 24,
+      nombre: "Man In The Mirror",
+      artista: "Michel Jackson",
+      id_artista: 22,
+      album: "Bad",
+      id_album: 23,
+      link: "YUKci-qdK5k",
+      genero: "Pop",
+      id_genero: 2,
+    },
+    {
+      id: 25,
+      nombre: "I am not gonna teach your boyfriend how to dance with you",
+      artista: "Black Kids",
+      id_artista: 23,
+      album: "Wizard of Ahhhs",
+      id_album: 24,
+      link: "jhGAnqUtQDk",
+      genero: "indie",
+      id_genero: 4,
+    },
+    {
+      id: 26,
+      nombre: "Ode to Sleep",
+      artista: "Twenty One Pilots",
+      id_artista: 9,
+      album: "Vessel",
+      id_album: 25,
+      link: "lQ4gm8bHz0o",
+      genero: "indie",
+      id_genero: 4,
+    },
+    {
+      id: 27,
+      nombre: "Hombre al Agua",
+      artista: "Soda Stereo",
+      id_artista: 15,
+      album: "Cancion Animal",
+      id_album: 26,
+      link: "Wb4S6kx6uu4",
+      genero: "Rock",
+      id_genero: 3,
+    },
+    {
+      id: 28,
+      nombre: "Angel para un final",
+      artista: "Los Bunkers",
+      id_artista: 24,
+      album: "Musica Libre",
+      id_album: 27,
+      link: "nNDnTv3kfq0",
+      genero: "Pop",
+      id_genero: 2,
+    },
   ],
   artistas: [
     {
@@ -160,37 +369,44 @@ const baseDatosJSON = {
     {
       id: 1,
       nombre: "Música Electrónica",
-      descripcion: "La música electrónica es un género musical que utiliza tecnología electrónica para crear sonidos y ritmos, abarcando una amplia variedad de estilos."
+      descripcion: "La música electrónica es un género musical que utiliza tecnología electrónica para crear sonidos y ritmos, abarcando una amplia variedad de estilos.",
+      url_img: "../Statics/img/musicaElectronica.png"
     },
     {
       id: 2,
       nombre: "Pop",
-      descripcion: "El pop es un género musical popular caracterizado por melodías pegajosas y letras accesibles, abarcando una amplia gama de estilos y artistas."
+      descripcion: "El pop es un género musical popular caracterizado por melodías pegajosas y letras accesibles, abarcando una amplia gama de estilos y artistas.",
+      url_img: "../Statics/img/musicaPop.png"
     },
     {
       id: 3,
       nombre: "Rock",
-      descripcion: "El rock es un género musical que se originó en la década de 1950, caracterizado por el uso de guitarras eléctricas, batería y una fuerte presencia vocal."
+      descripcion: "El rock es un género musical que se originó en la década de 1950, caracterizado por el uso de guitarras eléctricas, batería y una fuerte presencia vocal.",
+      url_img: "../Statics/img/musicaRock.png"
     },
     {
       id: 4,
       nombre: "Hip Hop",
-      descripcion: "El hip hop es un género musical y cultural que se originó en la década de 1970, caracterizado por el rap, el DJing y el breakdancing."
+      descripcion: "El hip hop es un género musical y cultural que se originó en la década de 1970, caracterizado por el rap, el DJing y el breakdancing.",
+      url_img: "../Statics/img/musicaHipHop.png"
     },
     {
       id: 5,
       nombre: "R&B",
-      descripcion: "El R&B (Rhythm and Blues) es un género musical que combina elementos de soul, funk y pop, con un enfoque en las melodías vocales y ritmos pegajosos."
+      descripcion: "El R&B (Rhythm and Blues) es un género musical que combina elementos de soul, funk y pop, con un enfoque en las melodías vocales y ritmos pegajosos.",
+      url_img: "../Statics/img/musicaR&B.png"
     },
     {
       id: 6,
       nombre: "Country",
-      descripcion: "El country es un género musical estadounidense que se originó en el sur, caracterizado por sus historias narrativas y el uso de instrumentos como la guitarra acústica y el banjo."
+      descripcion: "El country es un género musical estadounidense que se originó en el sur, caracterizado por sus historias narrativas y el uso de instrumentos como la guitarra acústica y el banjo.",
+      url_img: "../Statics/img/musicaCountry.png"
     },
     {
       id: 7,
       nombre: "Jazz",
-      descripcion: "El jazz es un género musical que se originó a principios del siglo XX, caracterizado por su improvisación, ritmos complejos y una rica tradición instrumental."
+      descripcion: "El jazz es un género musical que se originó a principios del siglo XX, caracterizado por su improvisación, ritmos complejos y una rica tradición instrumental.",
+      url_img: "../Statics/img/musicaJazz.png"
     }
   ],
   album: [
@@ -260,28 +476,76 @@ const baseDatosJSON = {
     },
     {
       id: 9,
-      nombre: "El Diablito",
-      artista: "Caifanes",
-      id_artista: 8,
+      nombre: "Clancy",
+      artista: "Twenty One Pilots",
+      id_artista: 9,
       descripcion: "'El Diablito' es un álbum que marcó un hito en la música rock en español, con letras poéticas y una fusión de géneros.",
-      url_img: "https://upload.wikimedia.org/wikipedia/en/5/5c/Caifanes_ElDiablitoLP_cover.jpeg"
+      url_img: "https://ishopmx.vtexassets.com/arquivos/ids/292869/75678608643.jpg?v=638508807931370000"
     },
     {
       id: 10,
-      nombre: "El Silencio",
-      artista: "Caifanes",
-      id_artista: 8,
+      nombre: "Room on Fire",
+      artista: "The strokes",
+      id_artista: 10,
       descripcion: "'El Silencio' es un álbum emblemático de Caifanes, que consolidó su estatus como una de las bandas más influyentes del rock en español.",
-      url_img: "https://i.scdn.co/image/ab67616d0000b273bc4d989c48ad5b154fb0781d"
+      url_img: "https://m.media-amazon.com/images/I/71ZcjUILvdL.jpg"
     },
     {
       id: 11,
-      nombre: "El Nervio del Volcán",
-      artista: "Caifanes",
-      id_artista: 8,
+      nombre: "the Man Who Save The World",
+      artista: "Nirvana",
+      id_artista: 11,
+      descripcion: "'El Nervio del Volcán' es un álbum que muestra la evolución musical de Caifanes, con letras profundas y una fusión de géneros.",
+      url_img: "https://i.scdn.co/image/ab67616d0000b27336c5417732e53e23cb219246"
+    },
+    {
+      id: 12,
+      nombre: "Pablo Honey",
+      artista: "Radio Head",
+      id_artista: 12,
+      descripcion: "'El Nervio del Volcán' es un álbum que muestra la evolución musical de Caifanes, con letras profundas y una fusión de géneros.",
+      url_img: "https://i.scdn.co/image/ab67616d0000b273ec548c00d3ac2f10be73366d"
+    },
+    {
+      id: 13,
+      nombre: "October 2013",
+      artista: "Alexander Rybak",
+      id_artista: 13,
+      descripcion: "'El Nervio del Volcán' es un álbum que muestra la evolución musical de Caifanes, con letras profundas y una fusión de géneros.",
+      url_img: "https://i.scdn.co/image/ab67616d0000b2732e1c6382b5cb1571270aad83"
+    },
+    {
+      id: 14,
+      nombre: "Right thoughts, Right Words, Right Action",
+      artista: "Franz Ferdinand",
+      id_artista: 14,
+      descripcion: "'El Nervio del Volcán' es un álbum que muestra la evolución musical de Caifanes, con letras profundas y una fusión de géneros.",
+      url_img: "https://upload.wikimedia.org/wikipedia/en/e/e1/Franz_Ferdinand_-_Right_Thoughts_Right_Words_Right_Action-cover.jpg"
+    },
+    {
+      id: 15,
+      nombre: "Soda Stereo",
+      artista: "Soda Stereo",
+      id_artista: 15,
+      descripcion: "'El Nervio del Volcán' es un álbum que muestra la evolución musical de Caifanes, con letras profundas y una fusión de géneros.",
+      url_img: "https://m.media-amazon.com/images/I/71T8-+5HBYL._UF1000,1000_QL80_.jpg"
+    },
+    {
+      id: 16,
+      nombre: "La Historia Sin Fin",
+      artista: "Porter",
+      id_artista: 16,
+      descripcion: "'El Nervio del Volcán' es un álbum que muestra la evolución musical de Caifanes, con letras profundas y una fusión de géneros.",
+      url_img: "https://m.media-amazon.com/images/I/61tBXXKmozL.jpg"
+    },
+    {
+      id: 17,
+      nombre: "Right thoughts, Right Words, Right Action",
+      artista: "Franz Ferdinand",
+      id_artista: 17,
       descripcion: "'El Nervio del Volcán' es un álbum que muestra la evolución musical de Caifanes, con letras profundas y una fusión de géneros.",
       url_img: "https://i.scdn.co/image/ab67616d0000b27336aeaab4dc91a8dea53a2d8f"
-    }
+    },
   ]
 };
 

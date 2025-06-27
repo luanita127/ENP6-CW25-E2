@@ -5,7 +5,15 @@ let barra = document.getElementById("bsq");
 
 
 // Esta Variable se obtiene de la base de datos "nuestraBase.js"
-let canciones = bdcanciones
+let canciones = bdcanciones;
+let albums = bdAlbums;
+let artistas = bdArtistas;
+
+let coincidenciasb = [];
+let coinsidencias = [];
+let coincidenciasc = [];
+
+console.log(bdAlbums);
 
 
 /*Evento de entrada para el buscador, se usa la variable texto para almacenar el contendio de la barra de busqueda,
@@ -38,10 +46,12 @@ barra.addEventListener("input", function() {
 
         coinsidencias.forEach(bdcanciones => {
 
-            let item = document.createElement("li");
+            let item = document.createElement("div");
 
             let butitem = document.createElement("button");
             butitem.textContent = `${bdcanciones.nombre} - ${bdcanciones.artista}`;
+
+            butitem.classList.add("resbut");
 
             butitem.onclick = () => {
                 var cancionid = `${bdcanciones.link}`;
@@ -77,17 +87,64 @@ barra.addEventListener("input", function() {
         result.style.display = "none";
     }
 
+    // Repetimos el proceso anterior, sin embargo en este caso no necesitamos revisar si esta vacio ya que la funcion de arriba ya lo hace
+
+    coincidenciasb = bdAlbums.filter(albums => 
+        albums.nombre.toLowerCase().includes(texto)
+    );
+
+    // Recorremos el arreglo "Coincidenciasb" para buscar el nombre denro del diccionario que sacamos de nuestra base de datos"
+    coincidenciasb.forEach(bdAlbums => {
+
+        let item = document.createElement("div");
+
+        let butitem = document.createElement("button");
+        butitem.textContent = `Album - ${bdAlbums.nombre} - ${bdAlbums.artista}`;
+
+        butitem.classList.add("resbut");
+
+        //En este caso creamos una cookie para guardar la informacion del Album que seleccionamos
+        butitem.onclick = () => {
+            var albumid = `${bdAlbums.id}`;
+            `albumselec=${albumid}; path=/`;
+        }
+        item.appendChild(butitem);
+        result.appendChild(item);
+    });
+
+
+    coincidenciasc = bdArtistas.filter(artistas => 
+        artistas.nombre.toLowerCase().includes(texto)
+    );
+
+    /*Esta funcion tiene la misma funcionalidad que la aneterior con la diferencia que esta nos ayudara
+    a guardar la informacion de un artista*/
+    coincidenciasc.forEach(bdArtistas => {
+
+        let item = document.createElement("div");
+
+        let butitem = document.createElement("button");
+        butitem.textContent = `Artista - ${bdArtistas.nombre}`;
+
+        butitem.classList.add("resbut");
+
+        butitem.onclick = () => {
+            var artistaid = `${bdArtistas.id}`;
+            document.cookie = `asrtistaselec=${artistaid}; path=/`;
+        }
+        item.appendChild(butitem);
+        result.appendChild(item);
+    });
+
     
-    /*En caso de que el arreglo coinsidencias este vacio, s=enviamos un mensaje al usuario 
+    /*En caso de que los 3 arreglos coinsidencias esten vacios, y enviamos un mensaje al usuario 
     que le confirme que no encontramos coinsidencias en nuestra base de datos*/
     
-
-    if(coinsidencias.length == 0){
-        let item = document.createElement("li");
+    if(coinsidencias.length == 0 && coincidenciasb.length == 0 && coincidenciasc.length == 0){
+        let item = document.createElement("div");
         item.textContent = "No hay coinsidencias";
         result.appendChild(item);
     }
-
 
 
 })

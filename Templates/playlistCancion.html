@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../Statics/styles/playlistCancion.css">
+    <title>Reproductor</title>
+    <script src="../Dynamics/basedata.js"></script>
+    <script src="../Dynamics/nuestraBase.js"></script>
+    <link rel="icon" href="../Statics/img/logo.png" type="image/x-icon">
+</head>
+
+<body>
+    <section id="grad">
+        <a href="../Templates/crearPlaylist.html" class="navBar" id="site">Yolcame Miusic</a>
+
+        <div class="songSearch">
+            <form>
+                <input type="text" id="bsq" name="bsq">
+                <button type="submit" id="submitSearch">
+                    <img src="../Statics/img/search.svg" alt="searchIcon" id="searchIcon">
+                </button>
+            </form>
+        </div>
+
+        <div class="cent2">
+            <div id="result"></div>
+        </div>
+        <div class="cent">
+            <button id="perfil" class="botbut"> <img href="../Templates/Perfil.html" id="headerUser"> </button>
+            <button id="inicio" class="botbut"><img src="../Statics/img/iconoHome.png" alt="iconoHome" id="home"></button>
+        </div>
+        
+        
+    </section>
+
+    <main id="cancionInterfaz">
+        <div id="player"></div>
+        <nav id="barraInfe">
+            <input type="range" min="0" max="100" name="volume" id="volumeSlider">
+            <button type="text" id="muteBtn"></button> 
+            <button class="botones" id="cancionA">cancion</button>
+            <button class="botones" id="noRepetir">noRepetir</button>
+            <button class="botones" id="anterior">Anterior</button>
+            <button class="botones" id="playPauseBtn">pausa</button>
+            <button class="botones" id="siguiente">siguiente</button>
+            <button class="botones" id="aleatorio">aleatorio</button>
+            <button class="botones" id="cola">cola</button>
+            <input type="range" min="0" max="100" name="volume" id="seekBar">
+        </nav>
+    </main>
+    <script src="../Dynamics/elementals.js"></script>
+    <script src="../Dynamics/buscador.js"></script>
+    <script src="../Dynamics/playlisCancion.js"></script>
+    <script src="../Dynamics/playlistView.js"></script>
+    <script src="https://youtube.com/iframe_api"></script>
+</body>
+</html>

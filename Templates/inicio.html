@@ -7,21 +7,22 @@
     <script src="../Dynamics/basedata.js"></script>
     <script src="../Dynamics/nuestraBase.js"></script>
     <title>Yolcame Miusic</title>
+    <link rel="icon" href="../Statics/img/logo.png" type="image/x-icon">
 </head>
 <body>
     <section id="grad">
         <header class="header">
-            <h1 id="site">Yolcame Miusic</h1>
+            <a href="./Templates/inicio.html" class="navBar" id="site">Yolcame Miusic</a>
             <nav id="headerNav">
                 <div class="songSearch">
                     <form>
-                        <input type="bsq" id="bsq" name="bsq">
+                        <input type="text" id="bsq" name="bsq">
                         <button type="submit" id="submitSearch">
                             <img src="../Statics/img/search.svg" alt="searchIcon" id="searchIcon">
                         </button>
                     </form>
                 </div>
-                <a href="" id="headerUser">
+                <a href="../Templates/Perfil.html" id="headerUser">
                     <img src="../Statics/img/Ranita.png" alt="userIcon" id="froggy">
                 </a>
             </nav>
@@ -30,23 +31,20 @@
             <ul id="result"></ul>
         </div>
         <nav class="topBarNav">
-            <a href="" class="navBar">  
-                <span>Playlist</span>
+             <a href="./tusPlaylist.html" class="navBar">  
+                <span id="misPlaylists">Mis Playlists</span>
             </a>
-            <a href="" class="navBar">
+            <a href="./ventanaArtistas.html" class="navBar">
                 <span>Artistas</span>
             </a>
-            <a href="" class="navBar">
+            <a href="./generosVentana.html" class="navBar">
                 <span>Géneros</span>
             </a>
-            <a href="" class="navBar">
-                <span>Canciones destacadas</span>
+            <a href="./ventanaAlbumes.html" class="navBar">
+                <span>Albumes</span>
             </a>
-            <a href="" class="navBar">
+            <a href="../Templates/creditos.html" class="navBar" id="creditos">
                 <span>Créditos</span>
-            </a>
-            <a href="" class="navBar">
-                <span>Mi resumen</span>
             </a>
         </nav>
     </section>
@@ -62,7 +60,7 @@
             </article>
             <article>
                 <img src="../Statics/img/Ranita.png" alt="mainFig" id="ranita2">
-                <div id="centerDiv">Crear Playlist</div>
+                <div id="centerDiv" onclick="window.location.href='nuevaPlaylist.html'">Crear Playlist</div>
             </article>
             <article id="recSongs">
                 <div class="mainTitle" id="recSongs">Canciones que te recomendamos</div>
@@ -75,8 +73,28 @@
                     <img src="../Statics/img/songPlus.png" alt="+">
               </div>
             </article>
+            
         </section>
+
+        <div id="player"></div>
+
+        <div class="controls-bar">
+            <button id="playPauseBtn">⏸️</button> 
+            <label for="volumeSlider">Volumen:</label>
+            <button type="text" id="muteBtn"></button> 
+            <input type="range" max="100"  id="volumeSlider">
+
+            <!-- <span class="time">
+                <span id="currentTime">00:00</span>
+                <span id="duration">00:00</span>
+            </span> -->
+            <label for="seekBar">Duracion:</label>
+            <input type="range" id="seekBar" step="0.1" min="1">
+        </div>
+        <script src="../Dynamics/elementals.js"></script>
+    
     </main>
     <script src="../Dynamics/buscador.js"></script>
+     <script src="https://youtube.com/iframe_api"></script>
 </body>
 </html>

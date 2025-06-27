@@ -7,13 +7,12 @@
     src: url(../fonts/lemon_milk/LEMONMILK-Bold.otf) format('opentype');
 }
 
-#titulo { background-color: black; 
+/* #titulo { background-color: black; 
     font-weight: 10px; 
     color: antiquewhite; 
     text-align: center;
-}
+} */
 
-body { background-color: cadetblue;}
 
 h1 { font-family: 'Lemon  Milk Bod'; 
     font-size: 50px; font-weight: 5px; 
