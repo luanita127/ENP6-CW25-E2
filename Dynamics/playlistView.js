@@ -1,5 +1,6 @@
 //Creacion de una galleta para probar la playlist
 
+let portada = document.getElementById("portada");
 let lista = document.getElementById("lista");
 let addSong = document.getElementById("addSong");
 let sear = document.getElementById("bsq");
@@ -30,35 +31,50 @@ let arrayCookies = document.cookie.split(";");
 let songName;
 let songLink;
 let playlist = new Array();
-let cookieName = `${nombreAnterior}_MISPLAYLISTS_${playlistActual}=`;
+
+console.log(nombreAnterior);
+console.log(playlistActual);
+
+let cookieName = `${playlistActual}=`;
 
 //Comprobacion para encontrar la cookie que almacena la playlist
 
+console.log(cookieName);
 for (let i = 0; i<arrayCookies.length; i++){
     let cookies = arrayCookies[i];
     cookies = cookies.trim();
     if(cookies.indexOf(cookieName) === 0){
         if(cookies.slice(cookieName.length, cookies.length).split(",") != ""){
             playlist = cookies.slice(cookieName.length, cookies.length).split(",");
+            console.log(playlist);
         } else{
             playlist = [];
+            console.log(playlist);
         }
     }
 }
+
+let imagenportada;
+ for (let cookie of galletas) {
+    const [key, valor] = cookie.trim().split("=");
+    if (key === "portada") {
+        imagenportada = valor;
+    }
+}
+
+portada.innerHTML += `<img src="${imagenportada}">`
 
 /* Con esta funcion actualizamos la barra de la playlist que contiene todas las canciones de la misma, ademas de 
 asignarle un estilo o una clase segun sea el caso para mejorar la presentacion de las playlist*, esta funcion se
 llama cada vez que uno de los botones del buscado agrega una de las canciones al arreglo "playlist"*/
 
-console.log(playlist.length);
-console.log(playlist);
 
 
 function actualizarbarra(){
     if(playlist.length <= 0){
-        document.cookie = `${nombreAnterior}MISPLAYLISTS_${playlistActual}=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/`;
-        document.cookie = `cancionActual=${nombreAnterior}MISPLAYLISTS_${playlistActual}; expires=Thu, 01 Jan 1970 00:00:00 UTC`;
-        window.location.href = "./inicio.html";
+        document.cookie = `${playlistActual}=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/`;
+        document.cookie = `cancionActual=${playlistActual}; expires=Thu, 01 Jan 1970 00:00:00 UTC`;
+        //window.location.href = "./inicio.html";
     }
     lista.innerHTML = "";
     for (let i = 0; i < playlist.length; i++) {
@@ -88,8 +104,8 @@ function actualizarbarra(){
             if(locOfElmnt != -1){
                 playlist.splice(locOfElmnt, 1);
             }
-            document.cookie = `${nombreAnterior}MISPLAYLISTS_${playlistActual}=; expires=Thu, 01 Jan 1970 00:00:00 UTC`;
-            document.cookie = `${nombreAnterior}MISPLAYLISTS_${playlistActual}=${playlist}; max-age=${maxAge}; path=/`;
+            document.cookie = `${playlistActual}=; expires=Thu, 01 Jan 1970 00:00:00 UTC`;
+            document.cookie = `${playlistActual}=${playlist}; max-age=${maxAge}; path=/`;
             actualizarbarra();
         });
     });
